@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.glumma">
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,17 +11,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Profiler_6"
-            android:theme="@style/AppTheme.Splash"
+            android:name=".AddInformation"
             android:exported="false" />
+        <activity
+            android:name=".TrackMe"
+            android:exported="false" />
+        <activity
+            android:name=".Profiler_6"
+            android:exported="false"
+            android:theme="@style/AppTheme.Splash" />
         <activity
             android:name=".Profiler_5"
-            android:theme="@style/AppTheme.Splash"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.Splash" />
         <activity
             android:name=".Profiler_4"
-            android:theme="@style/AppTheme.Splash"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.Splash" />
         <activity
             android:name=".Profiler_3"
             android:exported="false"
@@ -45,8 +52,8 @@
         </activity>
         <activity
             android:name=".dashboard"
-            android:theme="@style/AppTheme.Splash"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.Splash" />
 
         <meta-data
             android:name="preloaded_fonts"
