@@ -78,6 +78,9 @@ public class ExerciseActivity extends AppCompatActivity {
         pressurebutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Pressure button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, PressureActivity.class);
+            startActivity(intent);
+            finish();
 
         });
 
@@ -85,6 +88,9 @@ public class ExerciseActivity extends AppCompatActivity {
         weightbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Weight button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, WeightActivity.class);
+            startActivity(intent);
+            finish();
 
         });
 
@@ -93,6 +99,9 @@ public class ExerciseActivity extends AppCompatActivity {
         foodbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Food button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, FoodActivity.class);
+            startActivity(intent);
+            finish();
 
 
         });
@@ -101,6 +110,9 @@ public class ExerciseActivity extends AppCompatActivity {
         exercisebutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Exercise button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, ExerciseActivity.class);
+            startActivity(intent);
+            finish();
 
         });
 
@@ -109,6 +121,9 @@ public class ExerciseActivity extends AppCompatActivity {
         time.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Time button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, LabActivity.class);
+            startActivity(intent);
+            finish();
 
         });
 

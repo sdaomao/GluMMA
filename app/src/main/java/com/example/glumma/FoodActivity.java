@@ -64,6 +64,7 @@ public class FoodActivity extends AppCompatActivity {
         foodDataList= loadInformation();
          adapter = new FoodAdapter(foodDataList);
         recyclerView.setAdapter(adapter);
+
         ImageButton glucosebutton = findViewById(R.id.imageButton);
         glucosebutton.setOnClickListener(v -> {
             // Do something in response to button click
