@@ -2,9 +2,7 @@ package com.example.glumma;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -27,21 +25,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 import adapters.InformationAdapter;
+import adapters.PressureAdapter;
 import information.Information;
+import information.Pressuredata;
 
-public class TrackMe extends AppCompatActivity {
+public class PressureActivity extends AppCompatActivity {
 
     private Intent intent;
 
     private RecyclerView recyclerView;
 
-    private InformationAdapter adapter;
-    private List<Information> informationList;
+    private PressureAdapter adapter;
+    private List<Pressuredata> pressureList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_track_me);
+        setContentView(R.layout.activity_pressure);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -63,9 +63,9 @@ public class TrackMe extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        informationList = loadInformation();
-        adapter = new InformationAdapter(informationList);
-        recyclerView.setAdapter(adapter);
+        pressureList = loadInformation();
+       adapter = new PressureAdapter(pressureList);
+       recyclerView.setAdapter(adapter);
 
         ImageButton glucosebutton = findViewById(R.id.imageButton);
         glucosebutton.setOnClickListener(v -> {
@@ -134,11 +134,10 @@ public class TrackMe extends AppCompatActivity {
             // Do something in response to button click
             load();
         });
-
     }
-    private List<Information> loadInformation() {
+    private List<Pressuredata> loadInformation() {
         SharedPreferences sharedPreferences = getSharedPreferences("AppData", MODE_PRIVATE);
-        List<Information> list = new ArrayList<>();
+        List<Pressuredata> list = new ArrayList<>();
         String data = sharedPreferences.getString("data", "[]");
         try {
             JSONArray dataArray = new JSONArray(data);
@@ -157,8 +156,7 @@ public class TrackMe extends AppCompatActivity {
                 String times = obj.getString("times");
                 String dateday = obj.getString("dateday");
 
-                Information information = new Information(dateday+",", period, glucose+" mg/dL", systolic + "/" + diastolic+" mmHg", times);
-
+                Pressuredata information = new Pressuredata(systolic+"mmHg",diastolic+"mmHg",dateday);
                 list.add(information);
             }
         } catch (JSONException e) {

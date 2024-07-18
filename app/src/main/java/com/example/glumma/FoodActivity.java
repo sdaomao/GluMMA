@@ -2,9 +2,7 @@ package com.example.glumma;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -26,28 +24,28 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import adapters.FoodAdapter;
 import adapters.InformationAdapter;
+import information.FoodData;
 import information.Information;
 
-public class TrackMe extends AppCompatActivity {
-
+public class FoodActivity extends AppCompatActivity {
     private Intent intent;
 
     private RecyclerView recyclerView;
 
-    private InformationAdapter adapter;
-    private List<Information> informationList;
+    private FoodAdapter adapter;
+    private List<FoodData> foodDataList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_track_me);
+        setContentView(R.layout.activity_food);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView2);
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.home) {
@@ -63,10 +61,9 @@ public class TrackMe extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        informationList = loadInformation();
-        adapter = new InformationAdapter(informationList);
+        foodDataList= loadInformation();
+         adapter = new FoodAdapter(foodDataList);
         recyclerView.setAdapter(adapter);
-
         ImageButton glucosebutton = findViewById(R.id.imageButton);
         glucosebutton.setOnClickListener(v -> {
             // Do something in response to button click
@@ -134,11 +131,11 @@ public class TrackMe extends AppCompatActivity {
             // Do something in response to button click
             load();
         });
-
     }
-    private List<Information> loadInformation() {
+
+    private List<FoodData> loadInformation() {
         SharedPreferences sharedPreferences = getSharedPreferences("AppData", MODE_PRIVATE);
-        List<Information> list = new ArrayList<>();
+        List<FoodData> list = new ArrayList<>();
         String data = sharedPreferences.getString("data", "[]");
         try {
             JSONArray dataArray = new JSONArray(data);
@@ -157,7 +154,7 @@ public class TrackMe extends AppCompatActivity {
                 String times = obj.getString("times");
                 String dateday = obj.getString("dateday");
 
-                Information information = new Information(dateday+",", period, glucose+" mg/dL", systolic + "/" + diastolic+" mmHg", times);
+                FoodData information = new FoodData(food,dateday,times);
 
                 list.add(information);
             }
