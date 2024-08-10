@@ -24,6 +24,7 @@ public class dashboard extends AppCompatActivity {
             return insets;
         });
 
+        // This button is for track
         RelativeLayout trackbutton = findViewById(R.id.trackme);
         trackbutton.setOnClickListener(v -> {
             // Do something in response to button click
@@ -31,18 +32,24 @@ public class dashboard extends AppCompatActivity {
             startActivity(new Intent(dashboard.this, TrackMe.class));
         });
 
+        // This button is for step counter
         RelativeLayout stepbutton = findViewById(R.id.stepcounter);
         stepbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Step counter button clicked", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(dashboard.this, StepController.class);
+            startActivity(intent);
+            finish();
         });
 
+        // This button is for the medication reminder
         RelativeLayout reminderbutton = findViewById(R.id.medication);
         reminderbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Medication reminder button clicked", Toast.LENGTH_SHORT).show();
         });
 
+        // This button is for the food diary
         RelativeLayout aboutbutton = findViewById(R.id.aboutdiabetes);
         aboutbutton.setOnClickListener(v -> {
             // Do something in response to button click

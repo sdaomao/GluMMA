@@ -111,7 +111,7 @@ public class AddInformation extends AppCompatActivity {
             timetext.setText(dayOfWeek + "," + date.toString() + "," + formattedTime);
         }
 
-        // This is for the adapter
+        // This is for the adapter and with the list 
         ArrayList<String> shopList = new ArrayList<>();
         shopList.add("Before Lunch");
         shopList.add("After Lunch");
@@ -121,6 +121,7 @@ public class AddInformation extends AppCompatActivity {
         periodspinner.setAdapter(adapter);
 
 
+        // This is for the done button
         Button donebutton = findViewById(R.id.button4);
         donebutton.setOnClickListener(v -> {
             // Do something in response to button click
@@ -147,6 +148,7 @@ public class AddInformation extends AppCompatActivity {
 
         });
 
+        // This is for the import button
         Button importbutton = findViewById(R.id.button3);
         importbutton.setOnClickListener(v -> {
             // Do something in response to button click
@@ -158,6 +160,7 @@ public class AddInformation extends AppCompatActivity {
             }
         });
 
+        // This is for the cancel button
         Button cancelbutton = findViewById(R.id.button5);
         cancelbutton.setOnClickListener(v -> {
             // Do something in response to button click

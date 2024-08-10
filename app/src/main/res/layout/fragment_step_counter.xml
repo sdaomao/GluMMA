@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StepCounter">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#002A3C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:id="@+id/tex1"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="52dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="STEP COUNTER"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_25sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_toEndOf="@+id/tex1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.827"
+                    app:layout_constraintStart_toEndOf="@+id/tex1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.538"
+                    app:srcCompat="@drawable/logo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+                android:layout_width="347dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/space1" />
+
+        <Space
+                android:layout_width="347dp"
+                android:layout_height="30dp"
+                android:id="@+id/space"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <ScrollView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/space1"
+                app:layout_constraintTop_toBottomOf="@+id/space">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/space1"
+                    app:layout_constraintVertical_bias="0.0">
+
+                <Space
+                        android:id="@+id/button5"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/roundedbutton1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="93dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="76dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/button6" />
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayou1t"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_180sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_below="@+id/space2"
+                        android:layout_alignParentEnd="true">
+
+                    <ImageView
+                            android:src="@drawable/baseline_water_drop_24"
+                            android:layout_width="match_parent"
+                            app:tint="@android:color/white"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/imageView16" />
+
+                    <TextView
+                            android:text="0.00"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView190" />
+
+                    <TextView
+                            android:text="Kcal"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView127" />
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/tex2"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_50sdp"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/imageButton8" />
+
+                <ImageButton
+                        android:src="@drawable/pause"
+                        app:tint="@android:color/white"
+                        android:layout_marginStart="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_marginEnd="@dimen/_100sdp"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton8"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                <TextView
+                        android:id="@+id/tex3"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="/7500"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_25sdp"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/tex2" />
+
+                <Button
+                        android:id="@+id/button6"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundedbutton1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Save"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:layout_marginEnd="@dimen/_50sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/linearLayout3" />
+
+                <Space
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_below="@+id/tex3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:id="@+id/space2" />
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_200sdp"
+                        android:layout_below="@+id/space2"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/linearLayout2">
+
+                    <ImageView
+                            android:src="@drawable/marker"
+                            android:layout_width="match_parent"
+                            app:tint="@android:color/white"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/imageView17" />
+
+                    <TextView
+                            android:text="0.00"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView26" />
+
+                    <TextView
+                            android:text="Mile"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView19" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_100sdp"
+                        android:layout_below="@+id/space2"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/linearLayout3">
+
+                    <ImageView
+                            android:src="@drawable/baseline_access_time_24"
+                            android:layout_width="match_parent"
+                            app:tint="@android:color/white"
+                            android:layout_height="@dimen/_30sdp"
+                            android:id="@+id/imageView15" />
+
+                    <TextView
+                            android:text="0h 0m"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16" />
+
+                    <TextView
+                            android:text="Min"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

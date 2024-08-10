@@ -1,66 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.glumma">
+        package="com.example.glumma">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BODY_SENSORS"/>
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
         <activity
-            android:name=".LabActivity"
-            android:exported="false" />
+                android:name=".StepController"
+                android:exported="false" />
         <activity
-            android:name=".ExerciseActivity"
-            android:exported="false" />
+                android:name=".LabActivity"
+                android:exported="false" />
         <activity
-            android:name=".FoodActivity"
-            android:exported="false" />
+                android:name=".ExerciseActivity"
+                android:exported="false" />
         <activity
-            android:name=".WeightActivity"
-            android:exported="false" />
+                android:name=".FoodActivity"
+                android:exported="false" />
         <activity
-            android:name=".PressureActivity"
-            android:exported="false" />
+                android:name=".WeightActivity"
+                android:exported="false" />
         <activity
-            android:name=".AddInformation"
-            android:exported="false" />
+                android:name=".PressureActivity"
+                android:exported="false" />
         <activity
-            android:name=".TrackMe"
-            android:exported="false" />
+                android:name=".AddInformation"
+                android:exported="false" />
         <activity
-            android:name=".Profiler_6"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".TrackMe"
+                android:exported="false" />
         <activity
-            android:name=".Profiler_5"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".Profiler_6"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".Profiler_4"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".Profiler_5"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".Profiler_3"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".Profiler_4"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".Profiler_2"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".Profiler_3"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".Profiler_1"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".Profiler_2"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
         <activity
-            android:name=".SplashScreen"
-            android:exported="true"
-            android:theme="@style/AppTheme.Splash">
+                android:name=".Profiler_1"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
+        <activity
+                android:name=".SplashScreen"
+                android:exported="true"
+                android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -68,13 +73,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".dashboard"
-            android:exported="false"
-            android:theme="@style/AppTheme.Splash" />
+                android:name=".dashboard"
+                android:exported="false"
+                android:theme="@style/AppTheme.Splash" />
 
         <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -40,5 +40,7 @@ dependencies {
 
     // SDP - a scalable size unit
     implementation("com.intuit.sdp:sdp-android:1.0.6")
-    implementation(kotlin("script-runtime"))
+
+    // This is for bar chart dependencies
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
