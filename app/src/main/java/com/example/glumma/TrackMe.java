@@ -48,16 +48,6 @@ public class TrackMe extends AppCompatActivity {
             return insets;
         });
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView2);
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            if (item.getItemId() == R.id.home) {
-                intent = new Intent(this, dashboard.class);
-                startActivity(intent);
-                finish();
-            }
-            return false;
-        });
-
         // Add the following code snippet to the onCreate method
         // to initialize the RecyclerView and set the adapter
         recyclerView = findViewById(R.id.recyclerView);
@@ -133,6 +123,45 @@ public class TrackMe extends AppCompatActivity {
         fab.setOnClickListener(v -> {
             // Do something in response to button click
             load();
+        });
+
+
+        // This is are for the navigation bottom
+        ImageButton home = findViewById(R.id.imageButton7);
+        home.setOnClickListener(v -> {
+            // Do something in response to button click
+            Toast.makeText(getApplicationContext(), "Home button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, dashboard.class);
+            startActivity(intent);
+            finish();
+        });
+
+        ImageButton trackme = findViewById(R.id.imageButton10);
+        trackme.setOnClickListener(v -> {
+            // Do something in response to button click
+
+            // Do something in response to button click
+            intent = new Intent(this, TrackMe.class);
+            startActivity(intent);
+            finish();
+        });
+
+        ImageButton StepCounter = findViewById(R.id.imageButton11);
+        StepCounter.setOnClickListener(v -> {
+            // Do something in response to button click
+            Toast.makeText(getApplicationContext(), "Step counter button clicked", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, StepController.class);
+            startActivity(intent);
+            finish();
+        });
+
+
+        ImageButton Reminder = findViewById(R.id.imageButton9);
+        Reminder.setOnClickListener(v -> {
+            // Do something in response to button click
+            intent = new Intent(this, FragmentController.class);
+            startActivity(intent);
+            finish();
         });
 
     }

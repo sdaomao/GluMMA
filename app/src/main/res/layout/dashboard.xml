@@ -69,8 +69,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
         app:layout_constraintBottom_toTopOf="@+id/guideline33"
         app:layout_constraintEnd_toStartOf="@+id/guideline1"
         app:layout_constraintHorizontal_bias="0.503"
@@ -142,8 +142,8 @@
 
         <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="@dimen/_48sdp"
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_64sdp"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="44dp"
                 app:srcCompat="@drawable/baseline_track_changes_24"
@@ -169,8 +169,8 @@
 
         <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="@dimen/_48sdp"
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_64sdp"
                 android:layout_marginStart="53dp"
                 android:layout_marginTop="53dp"
                 app:srcCompat="@drawable/baseline_directions_run_24"
@@ -197,8 +197,8 @@
 
         <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="@dimen/_48sdp"
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_64sdp"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="51dp"
                 app:srcCompat="@drawable/baseline_lightbulb_outline_24"
@@ -225,8 +225,8 @@
 
         <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="@dimen/_48sdp"
-                android:layout_height="@dimen/_48sdp"
+                android:layout_width="@dimen/_64sdp"
+                android:layout_height="@dimen/_64sdp"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="48dp"
                 app:srcCompat="@drawable/baseline_info_outline_24"

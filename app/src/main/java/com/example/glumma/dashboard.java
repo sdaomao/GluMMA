@@ -17,6 +17,7 @@ public class dashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
         setContentView(R.layout.dashboard);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -47,6 +48,8 @@ public class dashboard extends AppCompatActivity {
         reminderbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "Medication reminder button clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(dashboard.this, FragmentController.class));
+            finish();
         });
 
         // This button is for the food diary

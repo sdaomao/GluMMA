@@ -13,4 +13,12 @@
         <!-- Customize your theme here if needed -->
     </style>
 
+    <style name="CustomSwitchTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/baseColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+
+
 </resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MedicationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tex13"
+                android:textAlignment="center"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Medication and Reminders"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/space" />
+
+        <Button
+                android:text="Reminder"
+                android:fontFamily="@font/poppins_bold"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/baseColor"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/space1"
+                android:layout_marginBottom="96dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:background="#002A3C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:id="@+id/tex1"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Medication and Reminders"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_toEndOf="@+id/tex1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.827"
+                    app:layout_constraintStart_toEndOf="@+id/tex1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.538"
+                    app:srcCompat="@drawable/logo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+                android:layout_width="347dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/space1" />
+
+        <Space
+                android:layout_width="347dp"
+                android:layout_height="30dp"
+                android:id="@+id/space"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+                android:src="@drawable/medicationbg"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="0dp"
+                android:id="@+id/imageView18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintTop_toBottomOf="@+id/tex13"
+                app:layout_constraintBottom_toTopOf="@+id/button8"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+                android:text="Set Current Medication"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/baseColor"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/button10"
+                android:layout_marginBottom="40dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
