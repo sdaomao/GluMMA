@@ -16,9 +16,7 @@ public class AlarmUtils {
     public static void setAlarm(Context context, TimeData timeData) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             if (!canScheduleExactAlarms(context)) {
-                // Inform the user to enable exact alarm permissions
                 Log.w("AlarmUtils", "Exact alarm permission is not granted.");
-                // Here, you might want to direct the user to the settings page
                 Intent intent = new Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM);
                 context.startActivity(intent);
                 return;
@@ -42,7 +40,6 @@ public class AlarmUtils {
         );
 
         if (alarmManager != null) {
-            // Log before setting alarm
             Log.d("AlarmUtils", "Setting alarm at: " + alarmTime.getTime().toString());
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTime.getTimeInMillis(), pendingIntent);
         } else {
@@ -55,8 +52,7 @@ public class AlarmUtils {
             AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
             return alarmManager.canScheduleExactAlarms();
         }
-        // For older versions, exact alarms are allowed by default
-        return true;
+        return true; // For versions below Android 12
     }
 
     private static Calendar parseTime(String time) {
