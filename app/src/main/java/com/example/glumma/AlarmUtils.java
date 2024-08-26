@@ -42,6 +42,7 @@ public class AlarmUtils {
         if (alarmManager != null) {
             Log.d("AlarmUtils", "Setting alarm at: " + alarmTime.getTime().toString());
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTime.getTimeInMillis(), pendingIntent);
+
         } else {
             Log.e("AlarmUtils", "AlarmManager is null");
         }

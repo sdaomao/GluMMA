@@ -16,6 +16,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,7 +41,8 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
     private RecyclerView recyclerView;
     private TimerAdapter timeAdapter;
     private List<TimeData> timeDataList;
-
+    private Handler handler;
+    private Runnable checkAlarmsRunnable;
     public Reminders() {
         // Required empty public constructor
     }
@@ -81,6 +83,21 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
         recyclerView.setAdapter(timeAdapter);
 
         loadData();
+
+        // Initialize the handler and the runnable
+        handler = new Handler();
+        checkAlarmsRunnable = new Runnable() {
+            @Override
+            public void run() {
+                checkAlarms();
+                // Re-run this runnable every 10 seconds
+                handler.postDelayed(this, 10000); // 10000 ms = 10 seconds
+            }
+        };
+
+        // Start the 10-second checks
+        handler.post(checkAlarmsRunnable);
+
 
         return view;
     }
@@ -282,14 +299,12 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
 
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(context, AlarmReceiver.class);
+        intent.setAction("com.example.glumma.ACTION_ALARM");
         intent.putExtra("vibrate", timeData.isVibrate());
-        intent.putExtra("notification", timeData.isNotification());
         intent.putExtra("label", timeData.getLabel());
+        intent.putExtra("notification", timeData.isNotification());
 
         Calendar alarmTime = parseTime(timeData.getTime());
-
-        // Log the alarm time
-        Log.d("SetAlarm", "Setting alarm for: " + alarmTime.getTime().toString());
 
         int requestCode = (int) (alarmTime.getTimeInMillis() / 1000);
 
@@ -302,8 +317,7 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
 
         try {
             if (alarmManager != null) {
-                alarmManager.setExact(AlarmManager.RTC_WAKEUP, alarmTime.getTimeInMillis(), pendingIntent);
-                Log.d("SetAlarm", "Alarm set successfully.");
+                alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, alarmTime.getTimeInMillis(), pendingIntent);
             }
         } catch (SecurityException e) {
             e.printStackTrace();
@@ -381,5 +395,26 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
         hour = (hour == 0) ? 12 : hour; // Midnight should be 12 AM
 
         return String.format("%02d:%02d %s", hour, minute, amPm);
+    }
+
+    private void checkAlarms() {
+        String currentTime = getCurrentTime();
+        for (TimeData timeData : timeDataList) {
+            if (timeData.isEnabled() && timeData.getTime().equals(currentTime)) {
+                Log.d("CheckAlarms", "Triggering alarm for matching time: " + timeData.getTime());
+                setAlarm(timeData);
+                break; // Optionally, break if you only want to trigger one alarm per check
+            }
+        }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
+        // Stop the handler when the view is destroyed to avoid memory leaks
+        if (handler != null && checkAlarmsRunnable != null) {
+            handler.removeCallbacks(checkAlarmsRunnable);
+        }
     }
 }

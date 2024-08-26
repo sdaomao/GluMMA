@@ -12,6 +12,17 @@ import android.widget.TextView;
 
 public class AlarmDialogActivity extends Activity {
     private Vibrator vibrator;
+    private AlertDialog dialog;
+    private final Handler handler = new Handler();
+    private final Runnable cancelVibrationRunnable = () -> {
+        if (vibrator != null) {
+            vibrator.cancel();
+        }
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
+        finish(); // Close the activity
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +51,7 @@ public class AlarmDialogActivity extends Activity {
         builder.setView(dialogView); // Set the custom layout as the view
         builder.setCancelable(false);
 
-        AlertDialog dialog = builder.create();
+        dialog = builder.create();
         dialog.show();
 
         // Handle the button click event
@@ -48,16 +59,26 @@ public class AlarmDialogActivity extends Activity {
             if (vibrator != null) {
                 vibrator.cancel();
             }
-            dialog.dismiss();
+            if (dialog != null && dialog.isShowing()) {
+                dialog.dismiss();
+            }
             finish(); // Close the activity
         });
 
-        // Cancel vibration after 30 seconds if not stopped earlier
-        new Handler().postDelayed(() -> {
-            if (vibrator != null) {
-                vibrator.cancel();
-            }
-            finish(); // Close the activity
-        }, 10000);
+        // Cancel vibration after 10 seconds if not stopped earlier
+        handler.postDelayed(cancelVibrationRunnable, 10000);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Ensure dialog is dismissed and vibrator is stopped to avoid leaks
+        if (vibrator != null) {
+            vibrator.cancel();
+        }
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
+        handler.removeCallbacks(cancelVibrationRunnable);
     }
 }
