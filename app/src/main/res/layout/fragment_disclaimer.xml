@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TrackMe">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+                app:layout_constraintStart_toStartOf="parent">
+
+            <Space
+                    android:layout_width="354dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/space8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="#002A3C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                        android:id="@+id/dashboardText"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="DISCLAIMER"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.466"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    app:srcCompat="@drawable/disclaimer"
+                    android:id="@+id/imageView20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout6" />
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/rounded_button"
+                    app:layout_constraintBottom_toTopOf="@+id/space8"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.476"
+                    android:id="@+id/linearLayout6">
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="The information on this application is meant to supplement, not to take the place of, the connection you have with your healthcare professional. It is only meant to be used for informational purposes. The World Health Organisation, Cleveland Clinic, Better Health Channel, and other reputable organisations are the sources of the information about diabetes, including definitions, kinds, treatments, symptoms, and prevention."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6" />
+
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="Important:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7" />
+
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="This application's content is static and might not represent the most recent findings, recommendations, or developments in medicine."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8" />
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="Before making any decisions on your health or treatment plan, always seek the advice of a licensed medical professional or your healthcare provider."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9" />
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="There is no personalised medical diagnosis, advice, or treatment provided by this app."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10" />
+
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="The authors of this application disclaim all liability for any damages—direct, indirect, incidental, or consequential—that may arise from using the material on this website."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11" />
+
+                <TextView
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="You agree to these terms and indicate that you understand them by using this application."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView12" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navbar"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:background="#002A3C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        <Button
+                android:id="@+id/button12"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/roundbutton2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Proceed"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.47" />
+
+        <Button
+                android:id="@+id/button14"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cancel"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

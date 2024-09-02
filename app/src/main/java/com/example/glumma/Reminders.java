@@ -84,18 +84,19 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
 
         loadData();
 
+
         // Initialize the handler and the runnable
         handler = new Handler();
         checkAlarmsRunnable = new Runnable() {
             @Override
             public void run() {
                 checkAlarms();
-                // Re-run this runnable every 10 seconds
-                handler.postDelayed(this, 10000); // 10000 ms = 10 seconds
+                // Re-run this runnable every 2 seconds
+                handler.postDelayed(this, 5000); // 2000 ms = 2 seconds
             }
         };
 
-        // Start the 10-second checks
+        // Start the 2-second checks
         handler.post(checkAlarmsRunnable);
 
 

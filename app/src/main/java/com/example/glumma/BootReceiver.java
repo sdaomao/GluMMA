@@ -36,10 +36,10 @@ public class BootReceiver extends BroadcastReceiver {
                 public void run() {
                     checkAlarms(context);
                     // Re-run this runnable every 10 seconds
-                    handler.postDelayed(this, 10000); // 10000 ms = 10 seconds
+                    handler.postDelayed(this, 5000); // 10000 ms = 10 seconds
                 }
             };
-            handler.postDelayed(checkAlarmsRunnable, 10000); // Start after 10 seconds
+            handler.postDelayed(checkAlarmsRunnable, 5000); // Start after 10 seconds
         }
     }
 

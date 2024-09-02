@@ -9,12 +9,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.text.TextUtils;
 
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Profiler_1 extends AppCompatActivity {
 
@@ -38,6 +33,7 @@ public class Profiler_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validateInput()) {
+                    saveUserDetails();
                     proceedToProfiler2();
                 } else {
                     Toast.makeText(Profiler_1.this, "Please fill out all fields.", Toast.LENGTH_SHORT).show();
@@ -57,10 +53,24 @@ public class Profiler_1 extends AppCompatActivity {
                 radioGroupGender.getCheckedRadioButtonId() != -1;
     }
 
+    private void saveUserDetails() {
+        String name = editTextName.getText().toString().trim();
+        String height = editTextHeight.getText().toString().trim();
+        String weight = editTextWeight.getText().toString().trim();
+        int selectedGenderId = radioGroupGender.getCheckedRadioButtonId();
+        String gender = selectedGenderId == R.id.radioGroupGender ? "Male" : "Female";
+
+        getSharedPreferences("com.example.glumma", MODE_PRIVATE).edit()
+                .putString("name", name)
+                .putString("height", height)
+                .putString("weight", weight)
+                .putString("gender", gender)
+                .apply();
+    }
+
     private void proceedToProfiler2() {
         Intent intent = new Intent(Profiler_1.this, Profiler_2.class);
         startActivity(intent);
-        // Optionally, you can finish() Profiler1Activity to prevent going back.
         finish();
     }
 }

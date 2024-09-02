@@ -2,7 +2,6 @@ package com.example.glumma;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
@@ -28,14 +27,20 @@ public class AlarmDialogActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Create notification channel
+        NotificationHelper.createNotificationChannel(this);
+
         boolean vibrate = getIntent().getBooleanExtra("vibrate", false);
         String label = getIntent().getStringExtra("label");
+
+        // Start sending notifications every 5 seconds for 30 seconds
+        startNotificationLoop(label);
 
         if (vibrate) {
             vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
             if (vibrator != null) {
                 long[] pattern = {0, 1000, 1000}; // Delay, Vibrate, Sleep
-                vibrator.vibrate(pattern, 0); // Start the vibration
+                vibrator.vibrate(pattern, 0); // Start the vibration with an infinite loop
             }
         }
 
@@ -56,17 +61,32 @@ public class AlarmDialogActivity extends Activity {
 
         // Handle the button click event
         dialogView.findViewById(R.id.dialog_button).setOnClickListener(v -> {
-            if (vibrator != null) {
-                vibrator.cancel();
-            }
-            if (dialog != null && dialog.isShowing()) {
-                dialog.dismiss();
-            }
-            finish(); // Close the activity
+            stopVibrationAndClose();
         });
 
-        // Cancel vibration after 10 seconds if not stopped earlier
+        // Cancel vibration after 30 seconds if not stopped earlier
         handler.postDelayed(cancelVibrationRunnable, 10000);
+    }
+
+    // This will start the notification loop
+    private void startNotificationLoop(String label) {
+        final int notificationInterval = 5000; // 5 seconds
+        final int maxNotifications = 6; // 30 seconds / 5 seconds = 6 times
+
+        for (int i = 1; i <= maxNotifications; i++) {
+            handler.postDelayed(() -> NotificationHelper.sendNotification(this, "Reminder", label), i * notificationInterval);
+        }
+    }
+
+    private void stopVibrationAndClose() {
+        if (vibrator != null) {
+            vibrator.cancel();
+        }
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
+        handler.removeCallbacks(cancelVibrationRunnable);
+        finish(); // Close the activity
     }
 
     @Override

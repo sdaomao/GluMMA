@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        package="com.example.glumma" >
-
+        package="com.example.glumma">
     <!-- Permissions -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+            android:name="android.permission.READ_EXTERNAL_STORAGE"
             android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE"
             android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,9 +19,10 @@
 
     <permission
             android:name="com.example.glumma.MY_CUSTOM_PERMISSION"
-            android:label="Custom Permission"
             android:description="@string/permission_description"
+            android:label="Custom Permission"
             android:protectionLevel="signature" />
+
     <application
             android:name=".MyApp"
             android:allowBackup="true"
@@ -28,9 +30,34 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme" >
-
-        <!-- Activities -->
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".PreventionAndTreatment"
+                android:exported="false" />
+        <activity
+                android:name=".Symptoms"
+                android:exported="false" />
+        <activity
+                android:name=".TypesOfInsulin"
+                android:exported="false" />
+        <activity
+                android:name=".TypesOfDiabetes"
+                android:exported="false" />
+        <activity
+                android:name=".AboutDiabetesActivity"
+                android:exported="false" />
+        <activity
+                android:name=".AboutOralDiabetes"
+                android:exported="false" />
+        <activity
+                android:name=".AboutMenu"
+                android:exported="false" />
+        <activity
+                android:name=".DisclaimerFragment"
+                android:exported="false" />
+        <activity
+                android:name=".DisclaimerActivity"
+                android:exported="false" /> <!-- Activities -->
         <activity
                 android:name=".FragmentController"
                 android:exported="false"
@@ -86,33 +113,33 @@
         <activity
                 android:name=".SplashScreen"
                 android:exported="true"
-                android:theme="@style/AppTheme.Splash" >
+                android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
                 android:name=".AlarmDialogActivity"
-                android:launchMode="singleTask"
+                android:allowEmbedded="false"
                 android:excludeFromRecents="true"
+                android:launchMode="singleTask"
                 android:showOnLockScreen="true"
                 android:turnScreenOn="true"
-                android:allowEmbedded="false"
                 tools:targetApi="o_mr1" />
         <activity
                 android:name=".dashboard"
                 android:exported="false"
-                android:theme="@style/AppTheme.Splash" />
-
-        <!-- Register the AlarmReceiver -->
+                android:theme="@style/AppTheme.Splash" /> <!-- Register the AlarmReceiver -->
         <!-- Declare the receiver and assign the custom permission -->
-        <receiver android:name=".AlarmReceiver"
-                android:exported="false"
+        <receiver
+                android:name=".AlarmReceiver"
                 android:enabled="true"
+                android:exported="false"
                 android:permission="com.example.glumma.MY_CUSTOM_PERMISSION">
             <intent-filter>
-                <action android:name="com.example.yourapp.ACTION_ALARM"/>
+                <action android:name="com.example.yourapp.ACTION_ALARM" />
             </intent-filter>
         </receiver>
         <receiver

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TrackMe">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/navbar"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+                app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                    android:text="Prevention"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button21"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/space8" />
+
+            <Button
+                    android:text="Type of Insulin for Diabetes"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button20"
+                    app:layout_constraintHorizontal_bias="0.558"
+                    android:layout_marginBottom="24dp" />
+
+            <Button
+                    android:text="Type of Oral Diabetes Medication"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button19"
+                    app:layout_constraintHorizontal_bias="0.558"
+                    android:layout_marginBottom="24dp" />
+
+            <Space
+                    android:layout_width="354dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/space8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="#002A3C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.827"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.538"
+                        app:srcCompat="@drawable/logo"
+                        android:layout_marginEnd="16dp" />
+
+                <TextView
+                        android:id="@+id/dashboardText"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="About"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.6"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView21"
+                        app:layout_constraintHorizontal_bias="0.503" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    app:srcCompat="@drawable/disclaimer"
+                    android:id="@+id/imageView20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button15" />
+
+            <Button
+                    android:text="What is Diabetes?"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button16"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    android:layout_marginBottom="12dp" />
+
+            <Button
+                    android:text="Type of Diabetes?"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button18"
+                    android:layout_marginBottom="12dp" />
+
+            <Button
+                    android:text="Symptoms"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/baseColor"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:id="@+id/button20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/button21"
+                    android:layout_marginBottom="24dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navbar"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:background="#002A3C"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        <ImageButton
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@android:color/transparent"
+                app:tint="@color/baseColor"
+                app:srcCompat="@drawable/baseline_home_24"
+                android:id="@+id/imageButton15"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

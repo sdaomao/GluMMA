@@ -57,6 +57,8 @@ public class dashboard extends AppCompatActivity {
         aboutbutton.setOnClickListener(v -> {
             // Do something in response to button click
             Toast.makeText(getApplicationContext(), "About button clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(dashboard.this, DisclaimerFragment.class));
+            finish();
         });
     }
 }
