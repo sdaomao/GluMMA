@@ -35,7 +35,6 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
         holder.textTime.setText(information.getTime());
         holder.glucose.setText(information.getGlucose());
         holder.textPeriod.setText(information.getPeriod());
-        holder.pressure.setText(information.getBloodPressure());
         holder.time.setText(information.getTimer());
         // Bind other fields
     }
@@ -54,7 +53,6 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
             textTime = itemView.findViewById(R.id.text22);
             textPeriod = itemView.findViewById(R.id.text13);
             glucose = itemView.findViewById(R.id.text4);
-            pressure = itemView.findViewById(R.id.text21);
             time = itemView.findViewById(R.id.text12);
             // Initialize other TextViews
         }

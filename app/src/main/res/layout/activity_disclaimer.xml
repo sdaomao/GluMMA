@@ -42,22 +42,20 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/dashboardText"
-                    android:layout_width="@dimen/_150sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentBottom="true"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="DISCLAIMER"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/white"
-                    android:textSize="28sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.555"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.533" />
+                        android:id="@+id/dashboardText"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="DISCLAIMER"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.466"
+                        app:layout_constraintEnd_toEndOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -84,14 +82,14 @@
                     android:id="@+id/linearLayout6">
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="The purpose of this program is to assist users in monitoring diabetes-related indicators, such as blood pressure, weight, food intake, exercise, test findings, and medical consultation records. It also has features like a step counter to track physical activity, medication alerts, and general diabetic information from reliable sources like the Better Health Channel, Cleveland Clinic, and World Health Organisation."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="The purpose of this program is to assist users in monitoring diabetes-related indicators, such as blood pressure, weight, food intake, exercise, test findings, and medical consultation records. It also has features like a step counter to track physical activity, medication alerts, and general diabetic information from reliable sources like the Better Health Channel, Cleveland Clinic, and World Health Organisation."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6" />
 
 
                 <TextView
@@ -99,7 +97,7 @@
                         android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
-                        android:text="IMPORTANT:"
+                        android:text="Important:"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView7" />
@@ -107,7 +105,7 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="Communicate with a healthcare provider: This app is not meant to replace expert medical advice, diagnosis, or treatment; rather, it is meant to be used for tracking and informative purposes only. Before making any decisions about managing their diabetes or altering their treatment plan, users should speak with their healthcare practitioner."
@@ -117,7 +115,7 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="No Liability: The developers of this program disclaim all duty for any danger, injury, or damages arising from the use of the program. Any decisions made by the user based on the information provided by the program are entirely the user's responsibility."
@@ -127,7 +125,7 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="Medication and treatment: This application's medication reminders and associated data are solely for administrative purposes. When using any drug, users should speak with their doctor or chemist and follow the recommended course of therapy."
@@ -138,7 +136,7 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="Accuracy of information: Although every attempt has been taken to assure that the data included in this application is correct and current, no assurance is given as to the accuracy or completeness of the data. Constantly double-check information with a medical expert."
@@ -148,7 +146,7 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_bold"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="You accept that you have read and agree to these terms, and that this tool should be used in conjunction with your ongoing healthcare and diabetes treatment plan rather than in place of it."
@@ -171,18 +169,18 @@
             app:layout_constraintHorizontal_bias="0.0">
 
         <Button
-            android:id="@+id/button12"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
-            android:background="@drawable/roundbutton2"
-            android:fontFamily="@font/poppins_bold"
-            android:text="Proceed"
-            android:textColor="@color/baseColor"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.47" />
+                android:id="@+id/button12"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/roundbutton2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Proceed"
+                android:textColor="@color/primaryColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.47" />
 
         <Button
                 android:id="@+id/button14"

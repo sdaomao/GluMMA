@@ -184,7 +184,7 @@ public class FoodActivity extends AppCompatActivity {
                 String times = obj.getString("times");
                 String dateday = obj.getString("dateday");
 
-                FoodData information = new FoodData(food,dateday,times);
+                FoodData information = new FoodData(food,dateday,times,period);
 
                 list.add(information);
             }

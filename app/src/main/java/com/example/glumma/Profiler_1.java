@@ -2,12 +2,13 @@ package com.example.glumma;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-import android.text.TextUtils;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,14 @@ public class Profiler_1 extends AppCompatActivity {
         editTextWeight = findViewById(R.id.editTextNumberDecimal1);
         radioGroupGender = findViewById(R.id.radioGroupGender);
 
+        // Apply the numeric input filter to the height and weight EditText fields
+        editTextHeight.setFilters(new InputFilter[]{createNumericInputFilter()});
+        editTextWeight.setFilters(new InputFilter[]{createNumericInputFilter()});
+
+        // Set input type to number
+        editTextHeight.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        editTextWeight.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+
         Button nextButton = findViewById(R.id.button);
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +49,17 @@ public class Profiler_1 extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private InputFilter createNumericInputFilter() {
+        return (source, start, end, dest, dstart, dend) -> {
+            for (int i = start; i < end; i++) {
+                if (!Character.isDigit(source.charAt(i))) {
+                    return "";
+                }
+            }
+            return null;
+        };
     }
 
     private boolean validateInput() {

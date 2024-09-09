@@ -118,7 +118,7 @@ public class WeightActivity extends AppCompatActivity {
 
         });
 
-        FloatingActionButton fab = findViewById(R.id.floatingActionButton);
+        FloatingActionButton fab = findViewById(R.id.floatingActionButton2);
         fab.setOnClickListener(v -> {
             // Do something in response to button click
             load();

@@ -82,14 +82,15 @@
                     android:id="@+id/linearLayout6">
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:text="The information on this application is meant to supplement, not to take the place of, the connection you have with your healthcare professional. It is only meant to be used for informational purposes. The World Health Organisation, Cleveland Clinic, Better Health Channel, and other reputable organisations are the sources of the information about diabetes, including definitions, kinds, treatments, symptoms, and prevention."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="The information on this application is meant to supplement, not to take the place of, the connection you have with your healthcare professional. It is only meant to be used for informational purposes. The World Health Organisation, Cleveland Clinic, Better Health Channel, and other reputable organisations are the sources of the information about diabetes, including definitions, kinds, treatments, symptoms, and prevention."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6" />
 
 
                 <TextView
@@ -104,49 +105,54 @@
 
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:text="This application's content is static and might not represent the most recent findings, recommendations, or developments in medicine."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="This application's content is static and might not represent the most recent findings, recommendations, or developments in medicine."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8" />
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Before making any decisions on your health or treatment plan, always seek the advice of a licensed medical professional or your healthcare provider."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="Before making any decisions on your health or treatment plan, always seek the advice of a licensed medical professional or your healthcare provider."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9" />
 
                 <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:text="There is no personalised medical diagnosis, advice, or treatment provided by this app."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="There is no personalised medical diagnosis, advice, or treatment provided by this app."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10" />
 
 
                 <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:text="The authors of this application disclaim all liability for any damages—direct, indirect, incidental, or consequential—that may arise from using the material on this website."
-                    android:textColor="@color/baseColor" />
+                        android:textColor="@color/baseColor"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="The authors of this application disclaim all liability for any damages—direct, indirect, incidental, or consequential—that may arise from using the material on this website."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11" />
 
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:justificationMode="inter_word"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="You agree to these terms and indicate that you understand them by using this application."

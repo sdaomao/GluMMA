@@ -239,17 +239,9 @@ public class SetTimer extends Fragment implements TimePickerFragment.TimePickerL
 
         });
 
-        Notification = view.findViewById(R.id.checkBox3);
-        Notification.setOnClickListener(v -> {
-            // Do something in response to button click
 
-        });
 
-        Alarm = view.findViewById(R.id.checkBox20);
-        Alarm.setOnClickListener(v -> {
-            // Do something in response to button click
 
-        });
 
         // This is for the back button
         ImageButton back = view.findViewById(R.id.imageButton14);
@@ -337,8 +329,8 @@ public class SetTimer extends Fragment implements TimePickerFragment.TimePickerL
             try {
                 newData.put("time", tvDisplayTime.getText().toString());
                 newData.put("vibration", Vibration.isChecked());
-                newData.put("alarm", Alarm.isChecked());
-                newData.put("notification", Notification.isChecked());
+                newData.put("alarm", true);
+                newData.put("notification", true);
                 newData.put("label", Label.getText().toString());
 
                 // Check if all days are selected

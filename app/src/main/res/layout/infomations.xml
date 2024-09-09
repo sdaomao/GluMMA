@@ -351,7 +351,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/bloodpressure"
+                    app:srcCompat="@drawable/baseline_monitor_heart_24"
                     app:tint="@color/baseColor" />
 
                 <TextView
@@ -689,7 +689,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.432"
-                    app:srcCompat="@drawable/baseline_directions_run_24"
+                    app:srcCompat="@drawable/tube"
                     app:tint="@color/baseColor" />
 
                 <TextView

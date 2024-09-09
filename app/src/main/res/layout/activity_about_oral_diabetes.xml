@@ -49,9 +49,10 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="There are several different classes of diabetes medications that work in different ways to help manage blood sugar levels. They include:"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

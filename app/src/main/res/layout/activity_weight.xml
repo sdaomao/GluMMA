@@ -24,6 +24,151 @@
                 app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
                 app:layout_constraintStart_toStartOf="parent">
 
+            <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:background="@drawable/layout"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.43"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+                <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_130sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Lab Result"
+                        android:textColor="@color/baseColor" />
+
+                <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Exercise"
+                        android:textColor="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_130sdp"
+                        android:layout_marginTop="@dimen/_60sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/tube"
+                        app:tint="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_60sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/baseline_directions_run_24"
+                        app:tint="@color/baseColor" />
+
+                <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Food"
+                        android:textColor="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_60sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/food"
+                        app:tint="@color/baseColor" />
+
+                <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_140sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Weight"
+                        android:textColor="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_130sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/wieght"
+                        app:tint="@color/baseColor" />
+
+                <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Pressure"
+                        android:textColor="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/baseline_monitor_heart_24"
+                        app:tint="@color/baseColor" />
+
+                <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="@dimen/_56sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/baseline_bloodtype_24"
+                        app:tint="@color/baseColor" />
+
+                <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Glucose"
+                        android:textColor="@color/baseColor" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:backgroundTint="@color/secondaryColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.958"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_input_add"
+                    app:tint="@color/baseColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.777" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/rectangle"
                     android:layout_width="match_parent"
@@ -74,169 +219,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/rectangle" />
-
-            <RelativeLayout
-                    android:id="@+id/relativeLayout"
-                    android:layout_width="@dimen/_200sdp"
-                    android:layout_height="@dimen/_120sdp"
-                    android:layout_marginTop="28dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.43"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/recyclerView">
-
-                <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_125sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Lab Result"
-                        android:textColor="@color/secondaryColor" />
-
-                <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_65sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Exercise"
-                        android:textColor="@color/secondaryColor" />
-
-                <ImageButton
-                        android:id="@+id/imageButton6"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_120sdp"
-                        android:layout_marginTop="@dimen/_60sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/tube"
-                        app:tint="@color/secondaryColor" />
-
-                <ImageButton
-                        android:id="@+id/imageButton5"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_60sdp"
-                        android:layout_marginTop="@dimen/_60sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/baseline_directions_run_24"
-                        app:tint="@color/secondaryColor" />
-
-                <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_20sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Food"
-                        android:textColor="@color/secondaryColor" />
-
-                <ImageButton
-                        android:id="@+id/imageButton4"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginTop="@dimen/_60sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/food"
-                        app:tint="@color/secondaryColor" />
-
-                <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_125sdp"
-                        android:layout_marginTop="@dimen/_40sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Weight"
-                        android:textColor="@color/secondaryColor" />
-
-                <ImageButton
-                        android:id="@+id/imageButton3"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_120sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/wieght"
-                        app:tint="@color/secondaryColor" />
-
-                <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_65sdp"
-                        android:layout_marginTop="@dimen/_40sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Pressure"
-                        android:textColor="@color/secondaryColor" />
-
-                <ImageButton
-                        android:id="@+id/imageButton2"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_60sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/bloodpressure"
-                        app:tint="@color/secondaryColor" />
-
-                <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="@dimen/_60sdp"
-                        android:background="@android:color/black" />
-
-                <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="@dimen/_56sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:background="@android:color/transparent"
-                        app:srcCompat="@drawable/baseline_bloodtype_24"
-                        app:tint="@color/secondaryColor" />
-
-                <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:layout_marginTop="@dimen/_40sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Glucose"
-                        android:textColor="@color/secondaryColor" />
-
-                <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="@dimen/_120sdp"
-                        android:background="@android:color/black" />
-
-                <View
-                        android:layout_width="@dimen/_180sdp"
-                        android:layout_height="1dp"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginTop="@dimen/_60sdp"
-                        android:background="@android:color/black"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-            </RelativeLayout>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    app:backgroundTint="@color/primaryColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.958"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@android:drawable/ic_input_add"
-                    app:tint="@color/baseColor"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintVertical_bias="0.777" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

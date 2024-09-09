@@ -49,11 +49,12 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="
 There are several types of diabetes. The most common forms include:"
+                        android:justificationMode="inter_word"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView7" />
@@ -61,9 +62,10 @@ There are several types of diabetes. The most common forms include:"
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="Type 2 diabetes: With this type, your body doesn’t make enough insulin and/or your body’s cells don’t respond normally to the insulin (insulin resistance). This is the most common type of diabetes. It mainly affects adults, but children can have it as well."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -71,9 +73,10 @@ There are several types of diabetes. The most common forms include:"
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="Pre-diabetes: This type is the stage before Type 2 diabetes. Your blood glucose levels are higher than normal but not high enough to be officially diagnosed with Type 2 diabetes."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -81,9 +84,10 @@ There are several types of diabetes. The most common forms include:"
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="Type 1 diabetes: This type is an autoimmune disease in which your immune system attacks and destroys insulin-producing cells in your pancreas for unknown reasons. Up to 10% of people who have diabetes have Type 1. It’s usually diagnosed in children and young adults, but it can develop at any age."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -92,9 +96,10 @@ There are several types of diabetes. The most common forms include:"
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="Gestational diabetes: This type develops in some people during pregnancy. Gestational diabetes usually goes away after pregnancy. However, if you have gestational diabetes, you’re at a higher risk of developing Type 2 diabetes later in life."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -38,6 +38,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.InformationVie
         holder.Food.setText(information.getFood());
         holder.time.setText(information.getDate());
         holder.textTime.setText(information.getTime());
+        holder.period.setText(information.getLauch());
 
 
         // Bind other fields
@@ -50,13 +51,15 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.InformationVie
 
     public static class InformationViewHolder extends RecyclerView.ViewHolder {
 
-        TextView textTime, weight, Food,pressure, time;
+        TextView textTime, weight, Food,pressure, time, period;
 
         public InformationViewHolder(@NonNull View itemView) {
             super(itemView);
             Food = itemView.findViewById(R.id.text4);
             time = itemView.findViewById(R.id.text22);
             textTime = itemView.findViewById(R.id.text12);
+            period = itemView.findViewById(R.id.text13);
+
             // Initialize other TextViews
         }
     }

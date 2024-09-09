@@ -49,20 +49,22 @@
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:text="Insulin is grouped according to how long it works in the body. Rapid- or short-acting insulin helps reduce blood glucose levels at mealtimes and intermediate or long-acting insulin helps with managing the body’s general needs. Both help manage blood glucose levels."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
                         android:id="@+id/textView7" />
 
 
                 <TextView
                         android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
+                        android:fontFamily="@font/poppins"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginStart="@dimen/_10sdp"
+                        android:justificationMode="inter_word"
                         android:text="The 5 different types of insulin range from rapid- to long-acting. Some types of insulin look clear, while others are cloudy. Check with your pharmacist whether the insulin you are taking should be clear or cloudy."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/rectangle"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-        <ScrollView
+        <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="@dimen/_280sdp"
                 android:layout_height="0dp"
                 android:background="@drawable/rounded_button"
@@ -79,10 +79,9 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/space"
-                    android:layout_marginTop="4dp"
-                    app:layout_constraintBottom_toTopOf="@+id/space1"
-                    app:layout_constraintVertical_bias="0.0">
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
 
                 <Space
                         android:id="@+id/button5"
@@ -92,9 +91,9 @@
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:layout_marginStart="93dp"
-                        android:layout_marginTop="21dp"
-                        android:layout_marginEnd="76dp"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginEnd="94dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_alignParentStart="true"
@@ -163,9 +162,9 @@
                 <ImageButton
                         android:src="@drawable/pause"
                         app:tint="@android:color/white"
-                        android:layout_marginStart="@dimen/_100sdp"
-                        android:layout_marginTop="@dimen/_50sdp"
-                        android:layout_marginEnd="@dimen/_100sdp"
+                        android:layout_marginStart="130dp"
+                        android:layout_marginTop="38dp"
+                        android:layout_marginEnd="130dp"
                         android:background="@android:color/transparent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -202,9 +201,9 @@
                         android:text="Save"
                         android:textColor="@color/primaryColor"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:layout_marginStart="@dimen/_50sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:layout_marginEnd="@dimen/_50sdp"
+                        android:layout_marginStart="67dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="63dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         android:layout_alignParentStart="true"
@@ -303,7 +302,7 @@
                             android:id="@+id/textView17" />
                 </LinearLayout>
             </RelativeLayout>
-        </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

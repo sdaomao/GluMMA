@@ -13,6 +13,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.OpenableColumns;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.webkit.MimeTypeMap;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -100,6 +102,30 @@ public class AddInformation extends AppCompatActivity {
         exercisetext = findViewById(R.id.exercisetext);
         notestext = findViewById(R.id.labresulttext);
 
+        // Apply InputFilter to restrict input to numbers only
+        InputFilter numberFilter = new InputFilter() {
+            @Override
+            public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    if (!Character.isDigit(source.charAt(i))) {
+                        return "";
+                    }
+                }
+                return null;
+            }
+        };
+
+        glucosetext.setFilters(new InputFilter[]{numberFilter});
+        systolictext.setFilters(new InputFilter[]{numberFilter});
+        diastolictext.setFilters(new InputFilter[]{numberFilter});
+        weighttext.setFilters(new InputFilter[]{numberFilter});
+
+        // Set input type to number
+        glucosetext.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        systolictext.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        diastolictext.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        weighttext.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             LocalTime time = LocalTime.now();
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
@@ -111,7 +137,7 @@ public class AddInformation extends AppCompatActivity {
             timetext.setText(dayOfWeek + "," + date.toString() + "," + formattedTime);
         }
 
-        // This is for the adapter and with the list 
+        // This is for the adapter and with the list
         ArrayList<String> shopList = new ArrayList<>();
         shopList.add("Before Lunch");
         shopList.add("After Lunch");
@@ -119,7 +145,6 @@ public class AddInformation extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinnerxml, shopList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         periodspinner.setAdapter(adapter);
-
 
         // This is for the done button
         Button donebutton = findViewById(R.id.button4);
@@ -143,9 +168,7 @@ public class AddInformation extends AppCompatActivity {
             } else {
                 // Do something
                 saveInformationAndImage(imageuri, time, filename, period, glucose, systolic, diastolic, weight, food, exercise, notes);
-
             }
-
         });
 
         // This is for the import button
@@ -168,10 +191,8 @@ public class AddInformation extends AppCompatActivity {
             Intent intent = new Intent(this, TrackMe.class);
             startActivity(intent);
             finish();
-
         });
     }
-
 
     @SuppressLint("IntentReset")
     private void openFileChooser() {
@@ -334,6 +355,10 @@ public class AddInformation extends AppCompatActivity {
         notestext.setText("");
         periodspinner.setSelection(0);
         imageuri = null;
+
+        Intent intent = new Intent(this, TrackMe.class);
+        startActivity(intent);
+        finish();
     }
 
 }
