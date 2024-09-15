@@ -70,8 +70,8 @@ public class AlarmDialogActivity extends Activity {
 
     // This will start the notification loop
     private void startNotificationLoop(String label) {
-        final int notificationInterval = 5000; // 5 seconds
-        final int maxNotifications = 6; // 30 seconds / 5 seconds = 6 times
+        final int notificationInterval = 10000; // 5 seconds
+        final int maxNotifications = 2; // 30 seconds / 5 seconds = 6 times
 
         for (int i = 1; i <= maxNotifications; i++) {
             handler.postDelayed(() -> NotificationHelper.sendNotification(this, "Reminder", label), i * notificationInterval);

@@ -36,22 +36,28 @@
 
                 <TextView
                         android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_130sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Lab Result"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_130sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:layout_marginEnd="4dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Lab Result"
+                    android:textAlignment="center"
                         android:textColor="@color/baseColor" />
 
                 <TextView
                         android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_70sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:layout_marginEnd="107dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Exercise"
+                    android:textAlignment="center"
                         android:textColor="@color/baseColor" />
 
                 <ImageButton
@@ -76,12 +82,15 @@
 
                 <TextView
                         android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_20sdp"
-                        android:layout_marginTop="@dimen/_100sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Food"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:layout_marginEnd="186dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Food"
+                    android:textAlignment="center"
                         android:textColor="@color/baseColor" />
 
                 <ImageButton
@@ -115,12 +124,15 @@
 
                 <TextView
                         android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_70sdp"
-                        android:layout_marginTop="@dimen/_40sdp"
-                        android:fontFamily="@font/poppins_bold"
-                        android:text="Pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginEnd="105dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Pressure"
+                    android:textAlignment="center"
                         android:textColor="@color/baseColor" />
 
                 <ImageButton
@@ -143,12 +155,15 @@
 
                 <TextView
                         android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
+                        android:layout_width="72dp"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginEnd="175dp"
                         android:fontFamily="@font/poppins_bold"
                         android:text="Glucose"
+                        android:textAlignment="center"
                         android:textColor="@color/baseColor" />
 
             </RelativeLayout>

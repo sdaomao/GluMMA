@@ -39,13 +39,13 @@
                 android:layout_marginTop="8dp" />
 
         <Button
-                android:id="@+id/dialog_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/poppins_bold"
-                android:text="Turn Off"
-                android:layout_marginTop="16dp" />
+            android:id="@+id/dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Turn Off" />
     </LinearLayout>
 
 
