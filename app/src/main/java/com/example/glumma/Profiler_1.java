@@ -19,6 +19,8 @@ public class Profiler_1 extends AppCompatActivity {
     private EditText editTextWeight;
     private RadioGroup radioGroupGender;
 
+    private Button skipButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,7 @@ public class Profiler_1 extends AppCompatActivity {
         editTextHeight = findViewById(R.id.editTextNumberDecimal);
         editTextWeight = findViewById(R.id.editTextNumberDecimal1);
         radioGroupGender = findViewById(R.id.radioGroupGender);
+        skipButton = findViewById(R.id.button2);
 
         // Apply the numeric input filter to the height and weight EditText fields
         editTextHeight.setFilters(new InputFilter[]{createNumericInputFilter()});
@@ -47,6 +50,13 @@ public class Profiler_1 extends AppCompatActivity {
                 } else {
                     Toast.makeText(Profiler_1.this, "Please fill out all fields.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        skipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(Profiler_1.this, dashboard.class));
             }
         });
     }

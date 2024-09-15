@@ -204,18 +204,18 @@
                         android:layout_marginBottom="32dp" />
 
                 <CheckBox
-                        android:text="  Humalog® (insulin lispro)"
-                        android:button="@drawable/checkbox_bg"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/checkBox2"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.110"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-                        android:layout_marginBottom="28dp" />
+                    android:id="@+id/checkBox2"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:button="@drawable/checkbox_bg"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="  Humalog® (insulin lispro)"
+                    android:textColor="@color/primaryColor"
+                    app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.106"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <Space
                         android:layout_width="match_parent"
@@ -293,18 +293,18 @@
                 </LinearLayout>
 
                 <CheckBox
-                        android:text="   Fiasp and NovoRapid® (insulin aspart)"
-                        android:button="@drawable/checkbox_bg"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/checkBox"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintHorizontal_bias="0.110"
-                        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-                        android:layout_marginBottom="20dp" />
+                    android:id="@+id/checkBox"
+                    android:layout_width="343dp"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="4dp"
+                    android:button="@drawable/checkbox_bg"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="   Fiasp and NovoRapid® (insulin aspart)"
+                    android:textColor="@color/primaryColor"
+                    app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.34"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <Space
                         android:layout_width="match_parent"

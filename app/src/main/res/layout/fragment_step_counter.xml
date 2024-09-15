@@ -27,7 +27,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="36dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="STEP COUNTER"
+                android:text="Step Counter"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/_25sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -234,11 +234,11 @@
                         android:id="@+id/linearLayout2">
 
                     <ImageView
-                            android:src="@drawable/marker"
-                            android:layout_width="match_parent"
-                            app:tint="@android:color/white"
-                            android:layout_height="@dimen/_30sdp"
-                            android:id="@+id/imageView17" />
+                        android:id="@+id/imageView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:src="@drawable/marker"
+                        app:tint="@android:color/white" />
 
                     <TextView
                             android:text="0.00"
@@ -251,14 +251,14 @@
                             android:id="@+id/textView26" />
 
                     <TextView
-                            android:text="Mile"
-                            android:textAlignment="center"
-                            android:textSize="@dimen/_15sdp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:textColor="@android:color/white"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView19" />
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Mile"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_15sdp" />
 
                 </LinearLayout>
 
@@ -275,31 +275,31 @@
                         android:id="@+id/linearLayout3">
 
                     <ImageView
-                            android:src="@drawable/baseline_access_time_24"
-                            android:layout_width="match_parent"
-                            app:tint="@android:color/white"
-                            android:layout_height="@dimen/_30sdp"
-                            android:id="@+id/imageView15" />
+                        android:id="@+id/imageView15"
+                        android:layout_width="158dp"
+                        android:layout_height="41dp"
+                        android:src="@drawable/baseline_access_time_24"
+                        app:tint="@android:color/white" />
 
                     <TextView
-                            android:text="0h 0m"
-                            android:textAlignment="center"
-                            android:textSize="@dimen/_15sdp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:textColor="@android:color/white"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView16" />
+                        android:id="@+id/textView16"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="0h 0m"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_15sdp" />
 
                     <TextView
-                            android:text="Min"
-                            android:textAlignment="center"
-                            android:textSize="@dimen/_15sdp"
-                            android:fontFamily="@font/poppins_bold"
-                            android:textColor="@android:color/white"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView17" />
+                        android:id="@+id/textView17"
+                        android:layout_width="161dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Min"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_15sdp" />
                 </LinearLayout>
             </RelativeLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

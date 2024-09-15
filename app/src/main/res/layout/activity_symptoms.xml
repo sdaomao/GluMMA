@@ -48,15 +48,15 @@
 
 
                 <TextView
-                        android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:justificationMode="inter_word"
-                        android:text="Symptoms of type 1 diabetes include the need to urinate often, thirst, constant hunger, weight loss, vision changes and fatigue. These symptoms may occur suddenly. Symptoms for type 2 diabetes are generally similar to those of type 1 diabetes but are often less marked. As a result, the disease may be diagnosed several years after onset, after complications have already arisen. For this reason, it is important to be aware of risk factors."
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView7" />
+                    android:id="@+id/textView7"
+                    android:layout_width="364dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins"
+                    android:justificationMode="inter_word"
+                    android:text="Symptoms of type 1 diabetes include the need to urinate often, thirst, constant hunger, weight loss, vision changes and fatigue. These symptoms may occur suddenly. Symptoms for type 2 diabetes are generally similar to those of type 1 diabetes but are often less marked. As a result, the disease may be diagnosed several years after onset, after complications have already arisen. For this reason, it is important to be aware of risk factors."
+                    android:textColor="@color/baseColor" />
 
                 <TextView
                         android:textColor="@color/baseColor"
