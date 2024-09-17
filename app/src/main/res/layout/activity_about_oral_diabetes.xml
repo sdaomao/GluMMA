@@ -37,8 +37,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Types of Oral Diabetes Medication"
                         android:textAlignment="center"
                         android:textSize="@dimen/_20sdp"
@@ -48,22 +49,23 @@
 
 
                 <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="367dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:fontFamily="@font/poppins"
-                    android:justificationMode="inter_word"
-                    android:text="There are several different classes of diabetes medications that work in different ways to help manage blood sugar levels. They include:"
-                    android:textColor="@color/baseColor" />
-
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins"
+                        android:justificationMode="inter_word"
+                        android:text="There are several different classes of diabetes medications that work in different ways to help manage blood sugar levels. They include:"
+                        android:textColor="@color/baseColor" />
 
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Alpha-glucosidase inhibitors"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,8 +74,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Biguanides"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -82,8 +85,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Bile acid sequestrants (BASs)"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -93,8 +97,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Dopamine-2 agonists"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -103,8 +108,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="DPP-4 inhibitors (gliptins)"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,8 +119,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Meglitinides (glinides)"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -123,8 +130,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="SGLT2 inhibitors"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -133,8 +141,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Sulfonylureas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -143,8 +152,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Thiazolidinediones (TZDs)"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

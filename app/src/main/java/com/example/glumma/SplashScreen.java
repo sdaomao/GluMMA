@@ -24,18 +24,20 @@ public class SplashScreen extends AppCompatActivity {
                 String height = sharedPreferences.getString("height", null);
                 String weight = sharedPreferences.getString("weight", null);
                 String gender = sharedPreferences.getString("gender", null);
+                boolean skip = sharedPreferences.getBoolean("skip", false);
 
                 if (disclaimerAccepted) {
 
-                    if (name == null || height == null || weight == null || gender == null) {
-                        Intent profiler1Intent = new Intent(SplashScreen.this, Profiler_1.class);
+                    if (skip){
+
+                        Intent profiler1Intent = new Intent(SplashScreen.this, dashboard.class);
                         startActivity(profiler1Intent);
                         finish();
                         return;
-                    }
-                    else {
-                        Intent homeIntent = new Intent(SplashScreen.this, dashboard.class);
-                        startActivity(homeIntent);
+
+                    } else {
+                        Intent disclaimerIntent = new Intent(SplashScreen.this, DisclaimerActivity.class);
+                        startActivity(disclaimerIntent);
                         finish();
                     }
                 } else {

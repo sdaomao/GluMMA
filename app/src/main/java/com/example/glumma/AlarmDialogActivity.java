@@ -1,7 +1,12 @@
 package com.example.glumma;
 
 import android.app.Activity;
+import android.app.AlarmManager;
 import android.app.AlertDialog;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
@@ -10,6 +15,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class AlarmDialogActivity extends Activity {
+    private boolean isAlarmStopped = false;
     private Vibrator vibrator;
     private AlertDialog dialog;
     private final Handler handler = new Handler();
@@ -70,7 +76,7 @@ public class AlarmDialogActivity extends Activity {
 
     // This will start the notification loop
     private void startNotificationLoop(String label) {
-        final int notificationInterval = 10000; // 5 seconds
+        final int notificationInterval = 1000; // 5 seconds
         final int maxNotifications = 2; // 30 seconds / 5 seconds = 6 times
 
         for (int i = 1; i <= maxNotifications; i++) {
@@ -85,10 +91,33 @@ public class AlarmDialogActivity extends Activity {
         if (dialog != null && dialog.isShowing()) {
             dialog.dismiss();
         }
+
+        // Mark the alarm as stopped
+        isAlarmStopped = true;
+        // Save to shared preferences
+        SharedPreferences sharedPreferences = getSharedPreferences("AlarmPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("isAlarmStopped", isAlarmStopped);
+        editor.apply();
+        // Cancel any further notifications
+        NotificationHelper.cancelNotification(this);
+
+        // Stop any further alarm triggers
+        Intent intent = new Intent(this, AlarmReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(
+                this,
+                0, // Use the same requestCode you used to set the alarm
+                intent,
+                PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT
+        );
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        if (alarmManager != null) {
+            alarmManager.cancel(pendingIntent);
+        }
+
         handler.removeCallbacks(cancelVibrationRunnable);
         finish(); // Close the activity
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

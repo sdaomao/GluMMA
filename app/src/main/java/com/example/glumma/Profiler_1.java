@@ -52,12 +52,12 @@ public class Profiler_1 extends AppCompatActivity {
                 }
             }
         });
-        skipButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+
+        skipButton.setOnClickListener( v-> {
 
                 startActivity(new Intent(Profiler_1.this, dashboard.class));
-            }
+            getSharedPreferences("com.example.glumma", MODE_PRIVATE).edit().putBoolean("skip", true).apply();
         });
     }
 

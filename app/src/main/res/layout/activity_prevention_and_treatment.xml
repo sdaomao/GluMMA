@@ -37,8 +37,9 @@
                 <TextView
                         android:textColor="@color/baseColor"
                         android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_5sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Prevention and Treatment
 "
                         android:textAlignment="center"
@@ -50,10 +51,11 @@
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="367dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
                     android:text="Type 1 diabetes cannot currently be prevented. Effective approaches are available to prevent type 2 diabetes and to prevent the complications and premature death that can result from all types of diabetes. These include policies and practices across whole populations and within specific settings (school, home, workplace) that contribute to good health for everyone, regardless of whether they have diabetes, such as exercising regularly, eating healthily, avoiding smoking, and controlling blood pressure and lipids. "
@@ -62,10 +64,11 @@
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="367dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
                     android:text="The starting point for living well with diabetes is an early diagnosis – the longer a person lives with undiagnosed and untreated diabetes, the worse their health outcomes are likely to be. Easy access to basic diagnostics, such as blood glucose testing, should therefore be available in primary health care settings. Patients will need periodic specialist assessment or treatment for complications."
@@ -73,10 +76,11 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="367dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
                     android:text="A series of cost-effective interventions can improve patient outcomes, regardless of what type of diabetes they may have. These interventions include blood glucose control through a combination of diet, physical activity and, if necessary, medication; control of blood pressure and lipids to reduce cardiovascular risk and other complications; and regular screening for damage to the eyes, kidneys and feet to facilitate early treatment. "

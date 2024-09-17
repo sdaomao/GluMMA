@@ -37,7 +37,7 @@ import adapters.TimerAdapter;
 import information.TimeData;
 
 public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickListener, TimerAdapter.EnableListener {
-
+    private boolean isAlarmStopped = false;
     private RecyclerView recyclerView;
     private TimerAdapter timeAdapter;
     private List<TimeData> timeDataList;
@@ -90,13 +90,12 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
         checkAlarmsRunnable = new Runnable() {
             @Override
             public void run() {
-                checkAlarms();
-                // Re-run this runnable every 2 seconds
-                handler.postDelayed(this, 5000); // 2000 ms = 2 seconds
+                checkAlarms(); // Check alarms, but do nothing if alarm is stopped
+                handler.postDelayed(this, 10000); // Re-run every 30 seconds
             }
         };
 
-        // Start the 2-second checks
+        // Start the 30-second checks
         handler.post(checkAlarmsRunnable);
 
 
@@ -399,12 +398,19 @@ public class Reminders extends Fragment implements TimerAdapter.OnDeleteClickLis
     }
 
     private void checkAlarms() {
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("AlarmPrefs", Context.MODE_PRIVATE);
+        boolean isAlarmStopped = sharedPreferences.getBoolean("isAlarmStopped", false);
+
+        if (isAlarmStopped) {
+            // Do nothing if the alarm has been manually stopped
+            return;
+        }
+
+        // Continue checking for matching alarms otherwise
         String currentTime = getCurrentTime();
         for (TimeData timeData : timeDataList) {
             if (timeData.isEnabled() && timeData.getTime().equals(currentTime)) {
-                Log.d("CheckAlarms", "Triggering alarm for matching time: " + timeData.getTime());
-                setAlarm(timeData);
-                break; // Optionally, break if you only want to trigger one alarm per check
+                setAlarm(timeData); // Set alarm if enabled and matching time found
             }
         }
     }

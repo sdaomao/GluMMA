@@ -62,17 +62,84 @@
                     android:layout_height="wrap_content">
 
                 <CheckBox
+                        android:text="  HumulinÂ® R"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox22"
+                        app:layout_constraintBottom_toTopOf="@+id/button13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginBottom="36dp"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                <CheckBox
+                        android:text="  HumulinÂ® R"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox21"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox22"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginBottom="24dp"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                        android:id="@+id/tex11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="      Intermediate-acting insulin"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_weight="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox21"
+                        android:layout_marginBottom="24dp" />
+
+                <CheckBox
+                        android:text="  HumulinÂ® R"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox20"
+                        app:layout_constraintBottom_toTopOf="@+id/tex11"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginBottom="24dp"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                <CheckBox
+                        android:text="  ActrapidÂ®"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox3"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginBottom="24dp"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                <CheckBox
                         android:text="  Humulin® 30/70"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox16"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintHorizontal_bias="0.107"
-                        app:layout_constraintBottom_toTopOf="@+id/button13"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintBottom_toTopOf="@+id/tex8"
                         android:layout_marginBottom="16dp" />
 
                 <CheckBox
@@ -80,7 +147,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox14"
                         app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +161,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox10"
                         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +175,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox9"
                         app:layout_constraintStart_toStartOf="parent"
@@ -137,7 +204,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox7"
                         app:layout_constraintStart_toStartOf="parent"
@@ -151,7 +218,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox6"
                         app:layout_constraintStart_toStartOf="parent"
@@ -165,14 +232,14 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.110"
+                        app:layout_constraintHorizontal_bias="0.09"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox6"
-                        android:layout_marginBottom="20dp" />
+                        android:layout_marginBottom="12dp" />
 
                 <TextView
                         android:id="@+id/tex9"
@@ -194,28 +261,28 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox4"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.110"
+                        app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintBottom_toTopOf="@+id/tex9"
-                        android:layout_marginBottom="32dp" />
+                        android:layout_marginBottom="28dp" />
 
                 <CheckBox
-                    android:id="@+id/checkBox2"
-                    android:layout_width="@dimen/_180sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:button="@drawable/checkbox_bg"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="  Humalog® (insulin lispro)"
-                    android:textColor="@color/primaryColor"
-                    app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.106"
-                    app:layout_constraintStart_toStartOf="parent" />
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="  Humalog® (insulin lispro)"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                 <Space
                         android:layout_width="match_parent"
@@ -240,7 +307,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="32dp" />
 
                 <Space
                         android:layout_width="261dp"
@@ -248,6 +315,7 @@
                         android:id="@+id/space4"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button13"
                         app:layout_constraintBottom_toBottomOf="parent" />
 
                 <LinearLayout
@@ -259,9 +327,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         android:id="@+id/linearLayout4"
-                        app:layout_constraintBottom_toTopOf="@+id/space3"
-                        app:layout_constraintVertical_bias="0.312"
-                        app:layout_constraintTop_toBottomOf="@+id/space5">
+                        app:layout_constraintTop_toBottomOf="@+id/space5"
+                        app:layout_constraintBottom_toTopOf="@+id/tex78">
 
                     <ImageButton
                             android:src="@drawable/baseline_arrow_back_24"
@@ -293,35 +360,25 @@
                 </LinearLayout>
 
                 <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="343dp"
-                    android:layout_height="44dp"
-                    android:layout_marginBottom="4dp"
-                    android:button="@drawable/checkbox_bg"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="   Fiasp and NovoRapid® (insulin aspart)"
-                    android:textColor="@color/primaryColor"
-                    app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.34"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <Space
+                        android:id="@+id/checkBox"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/_20sdp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:id="@+id/space3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:button="@drawable/checkbox_bg"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="   Fiasp and NovoRapid® (insulin aspart)"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.768"
-                        app:layout_constraintBottom_toTopOf="@+id/tex78"
-                        android:layout_marginBottom="4dp" />
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
 
                 <CheckBox
                         android:text="  NovoMix® 30 "
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox8"
                         app:layout_constraintStart_toStartOf="parent"
@@ -335,7 +392,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox11"
                         app:layout_constraintStart_toStartOf="parent"
@@ -349,7 +406,7 @@
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox15"
                         app:layout_constraintStart_toStartOf="parent"
@@ -366,10 +423,23 @@
                         android:layout_width="@dimen/_180sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/button13"
+                        tools:layout_editor_absoluteY="1242dp"
+                        tools:layout_editor_absoluteX="88dp" />
+
+                <TextView
+                        android:id="@+id/tex8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="      Short-acting insulin"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_weight="1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintBottom_toTopOf="@+id/space4" />
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+                        android:layout_marginBottom="24dp" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 

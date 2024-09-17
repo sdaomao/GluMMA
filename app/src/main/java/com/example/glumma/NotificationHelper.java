@@ -43,4 +43,11 @@ public class NotificationHelper {
             notificationManager.notify(1, builder.build());
         }
     }
+        public static void cancelNotification(Context context) {
+            NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            if (notificationManager != null) {
+                notificationManager.cancelAll(); // Or use specific notification ID if needed
+            }
+        }
+
 }

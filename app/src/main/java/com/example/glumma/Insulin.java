@@ -84,6 +84,10 @@ public class Insulin extends Fragment {
         selectedInsulin.add("Mixtard® 30/70");
         selectedInsulin.add("Mixtard® 50/50");
         selectedInsulin.add("Humulin® 30/70");
+        selectedInsulin.add("ActrapidÂ®");
+        selectedInsulin.add("HumulinÂ® R");
+        selectedInsulin.add("HumulinÂ® NPH ");
+        selectedInsulin.add("ProtaphaneÂ®");
 
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
             @Override
@@ -110,6 +114,10 @@ public class Insulin extends Fragment {
         CheckBox mixtard1 = view.findViewById(R.id.checkBox14);
         CheckBox mixtard2 = view.findViewById(R.id.checkBox15);
         CheckBox humulinn = view.findViewById(R.id.checkBox16);
+        CheckBox ActrapidÂ = view.findViewById(R.id.checkBox3);
+        CheckBox HumulinÂ1 = view.findViewById(R.id.checkBox20);
+        CheckBox HumulinÂ2 = view.findViewById(R.id.checkBox21);
+        CheckBox ProtaphaneÂ = view.findViewById(R.id.checkBox22);
 
         Button SetMedicationns = view.findViewById(R.id.button13);
         SetMedicationns.setOnClickListener(v -> {
@@ -192,6 +200,26 @@ public class Insulin extends Fragment {
         CheckBox humulinn = view.findViewById(R.id.checkBox16);
         if (humulinn.isChecked()) {
             selectedInsulin.add("Humulin® 30/70");
+        }
+
+        CheckBox ActrapidÂ = view.findViewById(R.id.checkBox3);
+        if (ActrapidÂ.isChecked()) {
+            selectedInsulin.add("ActrapidÂ®");
+        }
+
+        CheckBox HumulinÂ1 = view.findViewById(R.id.checkBox20);
+        if (HumulinÂ1.isChecked()) {
+            selectedInsulin.add("HumulinÂ® R");
+        }
+
+        CheckBox HumulinÂ2 = view.findViewById(R.id.checkBox21);
+        if (HumulinÂ2.isChecked()) {
+            selectedInsulin.add("HumulinÂ® NPH ");
+        }
+
+        CheckBox ProtaphaneÂ = view.findViewById(R.id.checkBox22);
+        if (ProtaphaneÂ.isChecked()) {
+            selectedInsulin.add("ProtaphaneÂ®");
         }
 
         return selectedInsulin;

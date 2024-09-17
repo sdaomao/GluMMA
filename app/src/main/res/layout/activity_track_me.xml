@@ -27,7 +27,7 @@
             <RelativeLayout
                     android:id="@+id/relativeLayout"
                     android:background="@drawable/layout"
-                    android:layout_width="@dimen/_200sdp"
+                    android:layout_width="@dimen/_250sdp"
                     android:layout_height="@dimen/_130sdp"
                     android:layout_marginTop="28dp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -36,36 +36,36 @@
                     app:layout_constraintTop_toBottomOf="@+id/recyclerView">
 
                 <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="87dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_130sdp"
-                    android:layout_marginTop="@dimen/_100sdp"
-                    android:layout_marginEnd="4dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Lab Result"
-                    android:textAlignment="center"
-                    android:textColor="@color/baseColor" />
+                        android:id="@+id/textView15"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_130sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Lab Result"
+                        android:textAlignment="center"
+                        android:textColor="@color/baseColor" />
 
                 <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_70sdp"
-                    android:layout_marginTop="@dimen/_100sdp"
-                    android:layout_marginEnd="107dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Exercise"
-                    android:textAlignment="center"
-                    android:textColor="@color/baseColor" />
+                        android:id="@+id/textView14"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:layout_marginEnd="@dimen/_80sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Exercise"
+                        android:textAlignment="center"
+                        android:textColor="@color/baseColor" />
 
                 <ImageButton
                         android:id="@+id/imageButton6"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_130sdp"
+                        android:layout_marginStart="@dimen/_175sdp"
                         android:layout_marginTop="@dimen/_60sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/tube"
@@ -75,30 +75,30 @@
                         android:id="@+id/imageButton5"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginStart="@dimen/_100sdp"
                         android:layout_marginTop="@dimen/_60sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/baseline_directions_run_24"
                         app:tint="@color/baseColor" />
 
                 <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="48dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_100sdp"
-                    android:layout_marginEnd="186dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Food"
-                    android:textAlignment="center"
-                    android:textColor="@color/baseColor" />
+                        android:id="@+id/textView13"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_100sdp"
+                        android:layout_marginEnd="@dimen/_160sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Food        "
+                        android:textAlignment="center"
+                        android:textColor="@color/baseColor" />
 
                 <ImageButton
                         android:id="@+id/imageButton4"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_60sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/food"
@@ -106,9 +106,9 @@
 
                 <TextView
                         android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
+                        android:layout_width="@dimen/_80sdp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/_140sdp"
+                        android:layout_marginStart="@dimen/_185sdp"
                         android:layout_marginTop="@dimen/_40sdp"
                         android:fontFamily="@font/poppins_bold"
                         android:text="Weight"
@@ -118,29 +118,29 @@
                         android:id="@+id/imageButton3"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_130sdp"
+                        android:layout_marginStart="@dimen/_175sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/wieght"
                         app:tint="@color/baseColor" />
 
                 <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_70sdp"
-                    android:layout_marginTop="@dimen/_40sdp"
-                    android:layout_marginEnd="105dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Pressure"
-                    android:textAlignment="center"
-                    android:textColor="@color/baseColor" />
+                        android:id="@+id/textView11"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_80sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Pressure"
+                        android:textAlignment="center"
+                        android:textColor="@color/baseColor" />
 
                 <ImageButton
                         android:id="@+id/imageButton2"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginStart="@dimen/_100sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/baseline_monitor_heart_24"
                         app:tint="@color/baseColor" />
@@ -149,23 +149,23 @@
                         android:id="@+id/imageButton"
                         android:layout_width="@dimen/_56sdp"
                         android:layout_height="@dimen/_56sdp"
-                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
                         android:background="@android:color/transparent"
                         app:srcCompat="@drawable/baseline_bloodtype_24"
                         app:tint="@color/baseColor" />
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="72dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_40sdp"
-                    android:layout_marginEnd="175dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Glucose"
-                    android:textAlignment="center"
-                    android:textColor="@color/baseColor" />
+                        android:id="@+id/textView9"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:layout_marginEnd="@dimen/_160sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Glucose       "
+                        android:textAlignment="center"
+                        android:textColor="@color/baseColor" />
 
             </RelativeLayout>
 
