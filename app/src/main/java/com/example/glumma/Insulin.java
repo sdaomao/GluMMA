@@ -87,7 +87,7 @@ public class Insulin extends Fragment {
         selectedInsulin.add("ActrapidÂ®");
         selectedInsulin.add("HumulinÂ® R");
         selectedInsulin.add("HumulinÂ® NPH ");
-        selectedInsulin.add("ProtaphaneÂ®");
+        selectedInsulin.add("Protaphane®");
 
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
             @Override
@@ -219,7 +219,7 @@ public class Insulin extends Fragment {
 
         CheckBox ProtaphaneÂ = view.findViewById(R.id.checkBox22);
         if (ProtaphaneÂ.isChecked()) {
-            selectedInsulin.add("ProtaphaneÂ®");
+            selectedInsulin.add("Protaphane®");
         }
 
         return selectedInsulin;
