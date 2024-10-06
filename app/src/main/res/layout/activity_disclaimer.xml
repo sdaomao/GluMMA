@@ -124,7 +124,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
                     android:justificationMode="inter_word"
-                    android:text="No Liability: The developers of this program disclaim all duty for any danger, injury, or damages arising from the use of the program. Any decisions made by the user based on the information provided by the program are entirely the user's responsibility."
+                    android:text="No Liability: The Developers of this Application disclaim all duty for any danger, injury, or damages arising from the use of the program. Any decisions made by the user based on the information provided by the program are entirely the user's responsibility."
                     android:textColor="@color/baseColor" />
 
                 <TextView
@@ -158,7 +158,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
                     android:justificationMode="inter_word"
-                    android:text="You accept that you have read and agree to these terms, and that this tool should be used in conjunction with your ongoing healthcare and diabetes treatment plan rather than in place of it."
+                    android:text="By clicking 'Proceed,' you acknowledge that you have read and agree to these terms, and understand that this Application is intended to supplement not replace, your ongoing healthcare and diabetes treatment plan."
                     android:textColor="@color/baseColor" />
             </LinearLayout>
 

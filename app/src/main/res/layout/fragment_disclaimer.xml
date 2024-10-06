@@ -135,7 +135,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
-                    android:text="There is no personalised medical diagnosis, advice, or treatment provided by this app."
+                    android:text="There is no personalized medical diagnosis, advice, or treatment provided by this app."
                     android:textColor="@color/baseColor" />
 
 
@@ -147,7 +147,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
-                    android:text="The authors of this application disclaim all liability for any damages—direct, indirect, incidental, or consequential—that may arise from using the material on this website."
+                    android:text="The Developers of this application disclaim all liability for any damages—direct, indirect, incidental, or consequential—that may arise from using the material on this website."
                     android:textColor="@color/baseColor" />
 
                 <TextView
@@ -158,7 +158,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_bold"
                     android:justificationMode="inter_word"
-                    android:text="You agree to these terms and indicate that you understand them by using this application."
+                    android:text="By clicking 'Proceed,' you agree to these terms and confirm that you understand them while using this application."
                     android:textColor="@color/baseColor" />
             </LinearLayout>
 
