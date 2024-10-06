@@ -329,8 +329,8 @@ public class SetTimer extends Fragment implements TimePickerFragment.TimePickerL
             try {
                 newData.put("time", tvDisplayTime.getText().toString());
                 newData.put("vibration", Vibration.isChecked());
-                newData.put("alarm", true);
-                newData.put("notification", true);
+                newData.put("alarm", false);
+                newData.put("notification", false);
                 newData.put("label", Label.getText().toString());
 
                 // Check if all days are selected

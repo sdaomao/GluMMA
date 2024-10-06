@@ -29,7 +29,7 @@ public class StepController extends AppCompatActivity {
 
         ImageButton home = findViewById(R.id.imageButton7);
         home.setOnClickListener(v -> {
-            // Do something in response to button click
+            stopCounterInFragment();
             Intent intent = new Intent(StepController.this, dashboard.class);
             startActivity(intent);
             finish();
@@ -37,13 +37,12 @@ public class StepController extends AppCompatActivity {
 
         ImageButton Step = findViewById(R.id.imageButton11);
         Step.setOnClickListener(v -> {
-            // Do something in response to button click
             replaceFragment(new StepCounter());
         });
 
         ImageButton Report = findViewById(R.id.imageButton9);
         Report.setOnClickListener(v -> {
-            // Do something in response to button click
+            stopCounterInFragment();
             replaceFragment(new StepReport());
         });
     }
@@ -51,7 +50,12 @@ public class StepController extends AppCompatActivity {
     private void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit();
+    }
 
-
+    private void stopCounterInFragment() {
+        Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.frameLayout);
+        if (currentFragment instanceof StepCounter) {
+            ((StepCounter) currentFragment).stopCounter();
+        }
     }
 }

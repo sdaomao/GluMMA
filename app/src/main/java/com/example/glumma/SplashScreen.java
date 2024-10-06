@@ -36,7 +36,7 @@ public class SplashScreen extends AppCompatActivity {
                         return;
 
                     } else {
-                        Intent disclaimerIntent = new Intent(SplashScreen.this, DisclaimerActivity.class);
+                        Intent disclaimerIntent = new Intent(SplashScreen.this, Profiler_1.class);
                         startActivity(disclaimerIntent);
                         finish();
                     }

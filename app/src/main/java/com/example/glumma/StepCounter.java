@@ -110,12 +110,12 @@ public class StepCounter extends Fragment implements SensorEventListener {
 
         Button SaveButton = view.findViewById(R.id.button6);
         SaveButton.setOnClickListener(v -> {
-           if (!save) {
-               Toast.makeText(requireContext(), "Start counter first", Toast.LENGTH_SHORT).show();
-           } else {
-               SaveCounter();
-               save = false;
-           }
+            if (!save) {
+                Toast.makeText(requireContext(), "Start counter first", Toast.LENGTH_SHORT).show();
+            } else {
+                SaveCounter();
+                save = false;
+            }
         });
 
         return view;
@@ -198,12 +198,27 @@ public class StepCounter extends Fragment implements SensorEventListener {
         }
     }
 
+    public void stopCounter() {
+        pauseCounter();
+        start = false;
+        save = false;
+        initialStepCount = 0;
+        steps = 0;
+        minutes = 0;
+        getActivity().runOnUiThread(() -> {
+            stepCount.setText("0");
+            milesCount.setText("0.00");
+            caloriesCount.setText("0.00");
+            minutesCount.setText("0h 0m 0s");
+        });
+    }
+
     private void SaveCounter() {
         Context context = getContext(); // Get context from the Fragment
-      if(handler != null) {
-        handler.removeCallbacks(runnable);
-        handler = null;
-      }
+        if(handler != null) {
+            handler.removeCallbacks(runnable);
+            handler = null;
+        }
         if (context != null) {
             SharedPreferences sharedPreferences = context.getSharedPreferences("StepData", MODE_PRIVATE);
             String existingData = sharedPreferences.getString("data", "[]");

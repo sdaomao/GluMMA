@@ -59,7 +59,7 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton glucosebutton = findViewById(R.id.imageButton);
         glucosebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Glucose button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Glucose Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, TrackMe.class);
             startActivity(intent);
             finish();
@@ -68,7 +68,7 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton pressurebutton = findViewById(R.id.imageButton2);
         pressurebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Pressure button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Pressure Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, PressureActivity.class);
             startActivity(intent);
             finish();
@@ -78,7 +78,7 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton weightbutton = findViewById(R.id.imageButton3);
         weightbutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Weight button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Weight Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, WeightActivity.class);
             startActivity(intent);
             finish();
@@ -89,18 +89,13 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton foodbutton = findViewById(R.id.imageButton4);
         foodbutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Food button clicked", Toast.LENGTH_SHORT).show();
-            intent = new Intent(this, FoodActivity.class);
-            startActivity(intent);
-            finish();
-
-
+            Toast.makeText(getApplicationContext(), "You are already in food page", Toast.LENGTH_SHORT).show();
         });
 
         ImageButton exercisebutton = findViewById(R.id.imageButton5);
         exercisebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Exercise button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Exercise Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, ExerciseActivity.class);
             startActivity(intent);
             finish();
@@ -111,7 +106,7 @@ public class FoodActivity extends AppCompatActivity {
         ImageButton time = findViewById(R.id.imageButton6);
         time.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Time button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Lab Result Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, LabActivity.class);
             startActivity(intent);
             finish();

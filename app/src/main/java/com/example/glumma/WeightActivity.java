@@ -36,6 +36,7 @@ public class WeightActivity extends AppCompatActivity {
 
     private WeightAdapter adapter;
     private List<WeightData> weightDataList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,14 +53,14 @@ public class WeightActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        weightDataList= loadInformation();
+        weightDataList = loadInformation();
         adapter = new WeightAdapter(weightDataList);
         recyclerView.setAdapter(adapter);
 
         ImageButton glucosebutton = findViewById(R.id.imageButton);
         glucosebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Glucose button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Glucose Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, TrackMe.class);
             startActivity(intent);
             finish();
@@ -68,54 +69,43 @@ public class WeightActivity extends AppCompatActivity {
         ImageButton pressurebutton = findViewById(R.id.imageButton2);
         pressurebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Pressure button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Pressure Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, PressureActivity.class);
             startActivity(intent);
             finish();
-
         });
 
         ImageButton weightbutton = findViewById(R.id.imageButton3);
         weightbutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Weight button clicked", Toast.LENGTH_SHORT).show();
-            intent = new Intent(this, WeightActivity.class);
-            startActivity(intent);
-            finish();
-
+            Toast.makeText(getApplicationContext(), "You are already in the weight page", Toast.LENGTH_SHORT).show();
         });
-
 
         ImageButton foodbutton = findViewById(R.id.imageButton4);
         foodbutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Food button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Food Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, FoodActivity.class);
             startActivity(intent);
             finish();
-
-
         });
 
         ImageButton exercisebutton = findViewById(R.id.imageButton5);
         exercisebutton.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Exercise button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Exercise Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, ExerciseActivity.class);
             startActivity(intent);
             finish();
-
         });
-
 
         ImageButton time = findViewById(R.id.imageButton6);
         time.setOnClickListener(v -> {
             // Do something in response to button click
-            Toast.makeText(getApplicationContext(), "Time button clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Lab Result Page", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, LabActivity.class);
             startActivity(intent);
             finish();
-
         });
 
         FloatingActionButton fab = findViewById(R.id.floatingActionButton2);
@@ -124,7 +114,7 @@ public class WeightActivity extends AppCompatActivity {
             load();
         });
 
-        // This is are for the navigation bottom
+        // This is for the navigation bottom
         ImageButton home = findViewById(R.id.imageButton7);
         home.setOnClickListener(v -> {
             // Do something in response to button click
@@ -136,8 +126,6 @@ public class WeightActivity extends AppCompatActivity {
 
         ImageButton trackme = findViewById(R.id.imageButton10);
         trackme.setOnClickListener(v -> {
-            // Do something in response to button click
-
             // Do something in response to button click
             intent = new Intent(this, TrackMe.class);
             startActivity(intent);
@@ -153,7 +141,6 @@ public class WeightActivity extends AppCompatActivity {
             finish();
         });
 
-
         ImageButton Reminder = findViewById(R.id.imageButton9);
         Reminder.setOnClickListener(v -> {
             // Do something in response to button click
@@ -162,6 +149,7 @@ public class WeightActivity extends AppCompatActivity {
             finish();
         });
     }
+
     private List<WeightData> loadInformation() {
         SharedPreferences sharedPreferences = getSharedPreferences("AppData", MODE_PRIVATE);
         List<WeightData> list = new ArrayList<>();
@@ -170,21 +158,10 @@ public class WeightActivity extends AppCompatActivity {
             JSONArray dataArray = new JSONArray(data);
             for (int i = 0; i < dataArray.length(); i++) {
                 JSONObject obj = dataArray.getJSONObject(i);
-                String time = obj.getString("time");
-                String filename = obj.getString("filename");
-                String period = obj.getString("period");
-                String glucose = obj.getString("glucose");
-                String systolic = obj.getString("systolic");
-                String diastolic = obj.getString("diastolic");
                 String weight = obj.getString("weight");
-                String food = obj.getString("food");
-                String exercise = obj.getString("exercise");
-                String notes = obj.getString("notes");
-                String times = obj.getString("times");
                 String dateday = obj.getString("dateday");
 
-                WeightData information = new WeightData(weight+"kg",dateday);
-
+                WeightData information = new WeightData(weight + "kg", dateday);
                 list.add(information);
             }
         } catch (JSONException e) {
@@ -192,10 +169,10 @@ public class WeightActivity extends AppCompatActivity {
         }
         return list;
     }
-    void load(){
+
+    void load() {
         intent = new Intent(this, AddInformation.class);
         startActivity(intent);
         finish();
     }
-
 }
