@@ -270,8 +270,7 @@ public class AddInformation extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 LocalDate today = LocalDate.now();
                 String dayOfWeek = today.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
-                System.out.println(dayOfWeek);
-                newData.put("dateday",dayOfWeek+","+today.toString());
+                newData.put("dateday", dayOfWeek + "," + today.toString());
                 newData.put("filename", filename);
                 newData.put("period", period);
                 newData.put("glucose", glucose);
@@ -306,9 +305,16 @@ public class AddInformation extends AppCompatActivity {
                 "Food: " + food + "\n" +
                 "Exercise: " + exercise + "\n" +
                 "Notes: " + notes);
-        builder.setPositiveButton("OK", (dialog, which) -> dialog.dismiss());
+        builder.setPositiveButton("OK", (dialog, which) -> {
+            dialog.dismiss();
+            Intent intent = new Intent(this, TrackMe.class);
+            startActivity(intent);
+            finish();
+        });
         builder.show();
+        builder.setCancelable(false);
         saveImageToExternalStorage(imageuri, filename);
+        saveWeightAndDate(weight);
     }
 
     private void saveImageToExternalStorage(Uri imageUri, String filename) {
@@ -341,7 +347,35 @@ public class AddInformation extends AppCompatActivity {
             }
         });
     }
+    private void saveWeightAndDate(String weight) {
+        SharedPreferences sharedPreferences = getSharedPreferences("AppData", MODE_PRIVATE);
+        String existingData = sharedPreferences.getString("weightData", "[]");
+        JSONArray dataArray;
+        try {
+            dataArray = new JSONArray(existingData);
+        } catch (JSONException e) {
+            dataArray = new JSONArray();
+        }
 
+        JSONObject newData = new JSONObject();
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                LocalDate today = LocalDate.now();
+                String dayOfWeek = today.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
+                newData.put("dateday", dayOfWeek + "," + today.toString());
+                newData.put("weight", weight);
+                dataArray.put(newData);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("weightData", dataArray.toString());
+        editor.apply();
+
+        Toast.makeText(this, "Weight and date saved successfully", Toast.LENGTH_SHORT).show();
+    }
     // Clear all fields
     public void clearfields(){
         timetext.setText("");
@@ -355,10 +389,6 @@ public class AddInformation extends AppCompatActivity {
         notestext.setText("");
         periodspinner.setSelection(0);
         imageuri = null;
-
-        Intent intent = new Intent(this, TrackMe.class);
-        startActivity(intent);
-        finish();
     }
 
 }

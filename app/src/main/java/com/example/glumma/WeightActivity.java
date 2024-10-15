@@ -153,7 +153,7 @@ public class WeightActivity extends AppCompatActivity {
     private List<WeightData> loadInformation() {
         SharedPreferences sharedPreferences = getSharedPreferences("AppData", MODE_PRIVATE);
         List<WeightData> list = new ArrayList<>();
-        String data = sharedPreferences.getString("data", "[]");
+        String data = sharedPreferences.getString("weightData", "[]");
         try {
             JSONArray dataArray = new JSONArray(data);
             for (int i = 0; i < dataArray.length(); i++) {

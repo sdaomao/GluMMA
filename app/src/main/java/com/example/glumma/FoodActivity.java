@@ -166,16 +166,8 @@ public class FoodActivity extends AppCompatActivity {
             JSONArray dataArray = new JSONArray(data);
             for (int i = 0; i < dataArray.length(); i++) {
                 JSONObject obj = dataArray.getJSONObject(i);
-                String time = obj.getString("time");
-                String filename = obj.getString("filename");
                 String period = obj.getString("period");
-                String glucose = obj.getString("glucose");
-                String systolic = obj.getString("systolic");
-                String diastolic = obj.getString("diastolic");
-                String weight = obj.getString("weight");
                 String food = obj.getString("food");
-                String exercise = obj.getString("exercise");
-                String notes = obj.getString("notes");
                 String times = obj.getString("times");
                 String dateday = obj.getString("dateday");
 
