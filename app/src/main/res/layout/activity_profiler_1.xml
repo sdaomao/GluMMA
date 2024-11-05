@@ -337,7 +337,6 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_semibold"
             android:text="Male"
-            android:textAlignment="center"
             app:layout_constraintEnd_toStartOf="@+id/guideline23"
             app:layout_constraintStart_toStartOf="@+id/guideButtonLeft" />
 
@@ -347,7 +346,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins_semibold"
             android:text="Female"
-            android:textAlignment="center"
+
             app:layout_constraintEnd_toStartOf="@+id/guideline18"
             app:layout_constraintStart_toStartOf="@+id/guideline23" />
 

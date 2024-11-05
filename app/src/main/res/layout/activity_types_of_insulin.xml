@@ -57,6 +57,8 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                     android:text="Insulin is grouped according to how long it works in the body. Rapid- or short-acting insulin helps reduce blood glucose levels at mealtimes and intermediate or long-acting insulin helps with managing the body’s general needs. Both help manage blood glucose levels."
                     android:textColor="@color/baseColor" />
 
@@ -70,6 +72,8 @@
                         android:layout_marginEnd="@dimen/_5sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                     android:text="The 5 different types of insulin range from rapid- to long-acting. Some types of insulin look clear, while others are cloudy. Check with your pharmacist whether the insulin you are taking should be clear or cloudy."
                     android:textColor="@color/baseColor" />
 
@@ -80,6 +84,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="The 5 types of insulin are:"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView9" />
@@ -91,21 +97,14 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Rapid-acting insulin"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView10" />
 
 
-                <TextView
-                        android:textColor="@color/baseColor"
-                        android:fontFamily="@font/poppins_bold"
-                        android:layout_marginStart="@dimen/_5sdp"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginEnd="@dimen/_5sdp"
-                        android:text="Dopamine-2 agonists"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView11" />
+
 
                 <TextView
                         android:textColor="@color/baseColor"
@@ -114,6 +113,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Short-acting insulin"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView12" />
@@ -125,6 +126,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Intermediate-acting insulin"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView13" />
@@ -136,6 +139,8 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Mixed insulin"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView14" />
@@ -147,6 +152,9 @@
                         android:layout_marginTop="@dimen/_10sdp"
                         android:layout_marginEnd="@dimen/_5sdp"
                         android:text="Long-acting insulin."
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView15" />

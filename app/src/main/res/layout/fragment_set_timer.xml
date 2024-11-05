@@ -76,11 +76,12 @@
                         android:textColor="@color/primaryColor"
                         android:textSize="@dimen/_15sdp"
                         android:background="@color/baseColor"
+                    android:layout_marginLeft="@dimen/_7sdp"
                         android:layout_width="@dimen/_40sdp"
                         android:layout_height="@dimen/_40sdp"
                         android:id="@+id/mondaybutton"
 
-                        android:layout_marginStart="12dp"
+
                         android:layout_marginBottom="8dp" />
 
                 <Button
@@ -168,17 +169,17 @@
                     app:layout_constraintHorizontal_bias="0.0" />
 
             <TextView
-                    android:id="@+id/reperts3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/primaryColor"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="Label:"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/reperts2"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="36dp" />
+                android:id="@+id/reperts3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Label:"
+                android:textColor="@color/primaryColor"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reperts2" />
 
             <Space
                     android:layout_width="347dp"
@@ -340,17 +341,17 @@
                     android:layout_marginTop="36dp" />
 
             <EditText
-                    android:layout_width="@dimen/_200sdp"
-                    android:layout_height="wrap_content"
-                    android:inputType="text"
-                    android:text=""
-                    android:ems="10"
-                    android:id="@+id/editTextText2"
-                    app:layout_constraintStart_toEndOf="@+id/reperts3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintTop_toBottomOf="@+id/switch2"
-                    android:layout_marginTop="4dp" />
+                android:id="@+id/editTextText2"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.378"
+                app:layout_constraintStart_toEndOf="@+id/reperts3"
+                app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
             <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/switch2"

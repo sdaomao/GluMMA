@@ -7,8 +7,8 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.glumma"
-        minSdk = 24
+        applicationId = "com.glucose.glumma"
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -21,6 +21,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

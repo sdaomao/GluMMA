@@ -49,17 +49,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/text13" />
 
         <ImageView
-                android:id="@+id/imageView14"
-                app:tint="@color/primaryColor"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text13"
-                app:srcCompat="@drawable/tube"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.098" />
+            android:id="@+id/imageView14"
+            android:layout_width="44dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text13"
+            app:layout_constraintVertical_bias="0.295"
+            app:srcCompat="@drawable/tube"
+            app:tint="@color/primaryColor" />
 
         <TextView
                 android:id="@+id/text13"

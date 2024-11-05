@@ -39,16 +39,21 @@
 
     <TextView
         android:id="@+id/dashboardText"
-        android:layout_width="@dimen/_150sdp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:text="DASHBOARD"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="28sp"
+        android:textSize="28dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1dp"
+        android:autoSizeMaxTextSize="1000dp"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
         app:layout_constraintLeft_toLeftOf="@+id/rectangle"
         app:layout_constraintRight_toRightOf="@+id/rectangle"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/rectangle"
         app:layout_constraintVertical_bias="0.571" />
 

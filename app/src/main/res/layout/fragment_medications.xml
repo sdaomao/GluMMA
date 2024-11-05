@@ -44,7 +44,7 @@
                     android:fontFamily="@font/poppins_bold"
                     android:text="Medication and Reminders"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/_18sdp"
+                    android:textSize="@dimen/_15sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -64,24 +64,25 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Space
-                android:layout_width="347dp"
-                android:layout_height="30dp"
-                android:id="@+id/space"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/rectangle"
-                app:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/space"
+            android:layout_width="347dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle" />
 
         <ImageView
-                android:src="@drawable/medicationbg"
-                android:layout_width="@dimen/_300sdp"
-                android:layout_height="0dp"
-                android:id="@+id/imageView18"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.476"
-                app:layout_constraintTop_toBottomOf="@+id/tex13"
-                app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
-                app:layout_constraintVertical_bias="0.0" />
+            android:id="@+id/imageView18"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/medicationbg"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/space"
+            app:layout_constraintVertical_bias="0.0" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

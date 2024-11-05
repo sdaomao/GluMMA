@@ -62,25 +62,27 @@
                     android:layout_height="wrap_content">
 
                 <CheckBox
-                        android:text="  Empagliflozin (Jardiance®)"
+                        android:text=" Empagliflozin (Jardiance®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox19"
                         app:layout_constraintHorizontal_bias="0.107"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toTopOf="@+id/button13"
-                        android:layout_marginBottom="32dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Dapagliflozin(Farxiga®)"
+                        android:text=" Dapagliflozin(Farxiga®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox18"
                         app:layout_constraintHorizontal_bias="0.110"
@@ -90,95 +92,102 @@
                         android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Canagliflozin(Invokana®)"
+                        android:text=" Canagliflozin(Invokana®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox17"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox18"
-                        android:layout_marginBottom="28dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Repaglinide(Prandin®)"
+                        android:text=" Repaglinide(Prandin®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox13"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox17"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Nateglinide(Starlix®)"
+                        android:text=" Nateglinide(Starlix®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox16"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox13"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Saxagliptin(Onglyza®)"
+                        android:text=" Saxagliptin(Onglyza®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox14"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox15"
-                        android:layout_marginBottom="28dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Alogliptin(Nesina®)"
+                        android:text=" Alogliptin(Nesina®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox10"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox11"
-                        android:layout_marginBottom="28dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Bromocriptine(Cycloset®)"
+                        android:text=" Bromocriptine(Cycloset®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox9"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox10"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Fortamet®"
+                        android:text=" Fortamet®"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox7"
                         app:layout_constraintStart_toStartOf="parent"
@@ -188,11 +197,12 @@
                         android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Glumetza®"
+                        android:text=" Glumetza®"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox6"
                         app:layout_constraintStart_toStartOf="parent"
@@ -202,11 +212,12 @@
                         android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Glucophage XR®"
+                        android:text=" Glucophage XR®"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox5"
                         app:layout_constraintStart_toStartOf="parent"
@@ -216,32 +227,34 @@
                         android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Glucophage®"
+                        android:text=" Glucophage®"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox4"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox5"
-                        android:layout_marginBottom="32dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
-                        android:text="  Miglitol(Glyset®)"
+                        android:text=" Miglitol(Glyset®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox2"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-                        android:layout_marginBottom="28dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <Space
                         android:layout_width="match_parent"
@@ -304,11 +317,12 @@
                 </LinearLayout>
 
                 <CheckBox
-                        android:text="   Acarbose(Precose®)"
+                        android:text=" Acarbose(Precose®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -324,46 +338,49 @@
                         app:layout_constraintBottom_toTopOf="@+id/checkBox" />
 
                 <CheckBox
-                        android:text="  Riomet®"
+                        android:text=" Riomet®"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                        android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox8"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox9"
-                        android:layout_marginBottom="16dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
                         android:text="  Linagliptin(Tradjenta®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox11"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox14"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <CheckBox
                         android:text="  Sitagliptin(Januvia®)"
                         android:button="@drawable/checkbox_bg"
                         android:fontFamily="@font/poppins_bold"
                         android:textColor="@color/primaryColor"
-                        android:layout_width="@dimen/_180sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:id="@+id/checkBox15"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.110"
                         app:layout_constraintBottom_toTopOf="@+id/checkBox16"
-                        android:layout_marginBottom="24dp" />
+                        android:layout_marginBottom="20dp" />
 
                 <Button
                         android:text="Set Medication"

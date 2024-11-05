@@ -43,7 +43,7 @@
 
                 <TextView
                     android:id="@+id/dashboardText"
-                    android:layout_width="@dimen/_150sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentBottom="true"
@@ -84,10 +84,11 @@
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="365dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
                     android:fontFamily="@font/poppins"
                     android:justificationMode="inter_word"
                     android:text="The purpose of this program is to assist users in monitoring diabetes-related indicators, such as blood pressure, weight, food intake, exercise, test findings, and medical consultation records. It also has features like a step counter to track physical activity, medication alerts, and general diabetic information from reliable sources like the Better Health Channel, Cleveland Clinic, and World Health Organisation."
@@ -107,21 +108,23 @@
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
+                    android:paddingRight="@dimen/_10sdp"
                     android:justificationMode="inter_word"
                     android:text="Communicate with a healthcare provider: This app is not meant to replace expert medical advice, diagnosis, or treatment; rather, it is meant to be used for tracking and informative purposes only. Before making any decisions about managing their diabetes or altering their treatment plan, users should speak with their healthcare practitioner."
                     android:textColor="@color/baseColor" />
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
                     android:justificationMode="inter_word"
                     android:text="No Liability: The Developers of this Application disclaim all duty for any danger, injury, or damages arising from the use of the program. Any decisions made by the user based on the information provided by the program are entirely the user's responsibility."
@@ -129,11 +132,12 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
+                    android:paddingRight="@dimen/_10sdp"
                     android:justificationMode="inter_word"
                     android:text="Medication and treatment: This application's medication reminders and associated data are solely for administrative purposes. When using any drug, users should speak with their doctor or chemist and follow the recommended course of therapy."
                     android:textColor="@color/baseColor" />
@@ -141,22 +145,25 @@
 
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="367dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
+                    android:paddingRight="@dimen/_10sdp"
                     android:justificationMode="inter_word"
                     android:text="Accuracy of information: Although every attempt has been taken to assure that the data included in this application is correct and current, no assurance is given as to the accuracy or completeness of the data. Constantly double-check information with a medical expert."
                     android:textColor="@color/baseColor" />
 
                 <TextView
                     android:id="@+id/textView12"
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_semibold"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
                     android:justificationMode="inter_word"
                     android:text="By clicking 'Proceed,' you acknowledge that you have read and agree to these terms, and understand that this Application is intended to supplement not replace, your ongoing healthcare and diabetes treatment plan."
                     android:textColor="@color/baseColor" />

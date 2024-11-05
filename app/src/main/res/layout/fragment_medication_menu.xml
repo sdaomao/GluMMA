@@ -302,6 +302,7 @@
                         android:id="@+id/tex78"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_10sdp"
                         android:fontFamily="@font/poppins_bold"
                         android:text="       Rapid-acting"
                         android:textColor="@color/primaryColor"
